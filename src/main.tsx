@@ -5,18 +5,18 @@ import App from './App.tsx'
 import './index.css'
 import Navbar from './components/layout/Navbar.tsx'
 import Footer from './components/layout/Footer.tsx'
-import SmoothScroll from "./components/provider/smooth-scrolling.tsx";
+import ScrollToTop from "./components/ScrollToTop.tsx";
 
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <BrowserRouter>
       <Navbar/>
-      <SmoothScroll>
+      <ScrollToTop>
       <App />
-      
+
       <Footer/>
-      </SmoothScroll>
+      </ScrollToTop>
     </BrowserRouter>
   </React.StrictMode>,
 )
