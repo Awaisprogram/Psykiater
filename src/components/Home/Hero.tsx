@@ -38,12 +38,12 @@ const Hero = () => {
           </div>
 
           {/* Image Grid - Exact Layout with Overlapping Side Images */}
-          <div className="relative -mt-32 md:-mt-72 lg:-mt-56">
-            <div className="flex items-start justify-between gap-4">
+          <div className="relative -mt-32 md:-mt-24 lg:-mt-56">
+            <div className="flex items-start justify-between gap-2 md:gap-4">
               {/* Left Side - 2 images (starts overlapping content) */}
-              <div className="hidden md:block w-32 lg:w-40 flex-shrink-0 space-y-4">
+              <div className="hidden md:block w-24 md:w-28 lg:w-40 flex-shrink-0 space-y-2 md:space-y-4">
                 {/* Top Left - Meditation woman (tall) */}
-                <div className="rounded-2xl overflow-hidden shadow-xl h-80 lg:h-96">
+                <div className="rounded-2xl overflow-hidden shadow-xl h-48 md:h-64 lg:h-96">
                   <img
                     src={therapy3}
                     alt="Meditation"
@@ -53,7 +53,7 @@ const Hero = () => {
                   />
                 </div>
                 {/* Bottom Left - Work stress */}
-                <div className="rounded-2xl overflow-hidden shadow-xl h-56 lg:h-64">
+                <div className="rounded-2xl overflow-hidden shadow-xl h-32 md:h-44 lg:h-64">
                   <img
                     src={therapy2}
                     alt="Work Stress"
@@ -65,9 +65,9 @@ const Hero = () => {
               </div>
 
               {/* Center - 3 images in a row */}
-              <div className="flex-1 grid grid-cols-3 gap-4 pt-36 md:pt-32">
+              <div className="flex-1 grid grid-cols-3 gap-2 md:gap-4 pt-24 md:pt-28">
                 {/* Depression */}
-                <div className="rounded-2xl overflow-hidden shadow-xl h-56 md:h-64 lg:h-80">
+                <div className="rounded-2xl overflow-hidden shadow-xl h-40 md:h-52 lg:h-80">
                   <img
                     src={therapy4}
                     alt="Depression"
@@ -78,7 +78,7 @@ const Hero = () => {
                 </div>
                 
                 {/* Anxiety */}
-                <div className="rounded-2xl mt-20 overflow-hidden shadow-xl h-56 md:h-64 lg:h-80">
+                <div className="rounded-2xl mt-8 md:mt-12 overflow-hidden shadow-xl h-40 md:h-52 lg:h-80">
                   <img
                     src={therapy1}
                     alt="Anxiety"
@@ -89,7 +89,7 @@ const Hero = () => {
                 </div>
 
                 {/* Couple Therapy */}
-                <div className="rounded-2xl overflow-hidden shadow-xl h-56 md:h-64 lg:h-80">
+                <div className="rounded-2xl overflow-hidden shadow-xl h-40 md:h-52 lg:h-80">
                   <img
                     src={article1}
                     alt="Couple Therapy"
@@ -101,9 +101,9 @@ const Hero = () => {
               </div>
 
               {/* Right Side - 2 images (starts overlapping content) */}
-              <div className="hidden md:block w-32 lg:w-40 flex-shrink-0 space-y-4">
+              <div className="hidden md:block w-24 md:w-28 lg:w-40 flex-shrink-0 space-y-2 md:space-y-4">
                 {/* Top Right - Sleep issues (tall) */}
-                <div className="rounded-2xl overflow-hidden shadow-xl h-80 lg:h-96">
+                <div className="rounded-2xl overflow-hidden shadow-xl h-48 md:h-64 lg:h-96">
                   <img
                     src={therapy2}
                     alt="Sleep Issues"
@@ -113,7 +113,7 @@ const Hero = () => {
                   />
                 </div>
                 {/* Bottom Right - Trauma */}
-                <div className="rounded-2xl overflow-hidden shadow-xl h-56 lg:h-64">
+                <div className="rounded-2xl overflow-hidden shadow-xl h-32 md:h-44 lg:h-64">
                   <img
                     src={therapy4}
                     alt="Trauma"

@@ -36,7 +36,7 @@ const Navbar = () => {
   return (
     <>
       <nav 
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300  ${
           scrolled ? 'bg-white/95 backdrop-blur-md shadow-lg' : 'bg-transparent'
         }`}
       >
@@ -53,7 +53,7 @@ const Navbar = () => {
             </Link>
 
             {/* Desktop Menu */}
-            <div className="hidden md:flex items-center space-x-8">
+            <div className="hidden lg:flex items-center space-x-8">
               {navLinks.map((link) => (
                 <Link 
                   key={link.path} 
@@ -72,7 +72,7 @@ const Navbar = () => {
 
             {/* Mobile Menu Button */}
             <button 
-              className="md:hidden p-2 focus:outline-none bg-white"
+              className="lg:hidden p-2 focus:outline-none bg-white"
               onClick={() => setIsOpen(!isOpen)}
               aria-label="Toggle menu"
             >
@@ -83,7 +83,7 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         <div 
-          className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
+          className={`lg:hidden overflow-hidden transition-all duration-300 ease-in-out ${
             isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
           }`}
         >
@@ -111,7 +111,7 @@ const Navbar = () => {
       {/* Mobile Menu Backdrop */}
       {isOpen && (
         <div 
-          className="fixed inset-0 z-40 md:hidden transition-opacity duration-300"
+          className="fixed inset-0 z-40 lg:hidden transition-opacity duration-300"
           onClick={() => setIsOpen(false)}
         />
       )}
