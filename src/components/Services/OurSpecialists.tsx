@@ -9,7 +9,7 @@ const OurSpecialist = () => {
       title: 'Physician, Psychiatrist & Specialist in Addiction Medicine',
       description: 'Experienced in both psychiatric care and addiction treatment. Worked in major Norwegian hospitals, including Oslo University Hospital, Ahus, and Lovisenberg',
       image: OurSpecialist1, // Replace with actual image path
-      bgGradient: 'from-gray-400 to-gray-500',
+      
     },
     {
       id: 2,
@@ -17,7 +17,7 @@ const OurSpecialist = () => {
       title: 'Physician, Psychiatrist & Specialist in Addiction Medicine',
       description: 'Experienced in both psychiatric care and addiction treatment. Worked in major Norwegian hospitals, including Oslo University Hospital, Ahus, and Lovisenberg',
       image: OurSpecialist2, // Replace with actual image path
-      bgGradient: 'from-gray-400 to-gray-500',
+      
     },
   ];
 

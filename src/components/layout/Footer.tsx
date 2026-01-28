@@ -61,7 +61,7 @@ const Footer = () => {
             <span className="flex items-center space-x-2 sm:space-x-3 text-sm sm:text-base order-2 lg:order-1">
               <DenmarkFlag className="w-8 h-5 w-12 h-8 rounded-lg flex-shrink-0" />
               <span className="hidden sm:inline">Psykiatriker Sweden</span>
-              <span className="sm:hidden">Sweden</span>
+              <span className="lg:hidden block">Sweden</span>
             </span>
 
             <Link
@@ -77,7 +77,7 @@ const Footer = () => {
             <span className="flex items-center space-x-2 sm:space-x-3 text-sm sm:text-base order-3">
               <SwedenFlag className="w-8 h-5 w-12 h-8 rounded-lg flex-shrink-0" />
               <span className="hidden sm:inline">DEN NORSKE LEGEFORENING</span>
-              <span className="sm:hidden">Norwegian</span>
+              <span className="lg:hidden block">Norwegian</span>
             </span>
           </div>
 

@@ -71,12 +71,11 @@ const Navbar = () => {
 
             {/* Mobile Menu Button */}
             <button 
-              className="md:hidden focus:outline-none focus:bg-transparent"
+              className="md:hidden p-2"
               onClick={() => setIsOpen(!isOpen)}
               aria-label="Toggle menu"
             >
-             
-              <RxHamburgerMenu className="w-6 h-6 transition-transform duration-300"/>
+              <RxHamburgerMenu className="w-6 h-6 text-black transition-transform duration-300"/>
             </button>
           </div>
         </div>

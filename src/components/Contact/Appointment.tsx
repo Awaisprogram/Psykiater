@@ -141,7 +141,7 @@ const BookAppointment = () => {
           <div className="bg-white rounded-b-2xl p-4 shadow-lg -mt-2">
             <div className="flex flex-wrap items-center justify-between gap-3">
               {/* Left Controls */}
-              <div className="flex flex-wrap items-center gap-2 sm:gap-4">
+              <div className="flex justify-center items-center flex-wrap items-center gap-2 sm:gap-4">
                 <button 
                   onClick={() => setIsMuted(!isMuted)}
                   className="flex flex-col items-center gap-0.5 hover:opacity-70 transition-opacity group"

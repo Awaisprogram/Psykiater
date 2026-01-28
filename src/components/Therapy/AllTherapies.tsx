@@ -34,12 +34,15 @@ const AllTherapies = () => {
 
   return (
     <section className="py-20 bg-gradient-to-b from-white to-gray-50">
-    <div className="max-w-7xl mx-auto px-6 lg:px-8">
-      <div className="text-center mb-16">
-        <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-          Therapies
-        </h2>
-      </div>
+    <div className="max-w-7xl mx-auto py-10 lg:px-8">
+    <div className="text-center mb-16">
+          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+            Therapies
+          </h2>
+          <p className="text-gray-600 text-base lg:text-lg max-w-3xl mx-auto">
+            Our professional psychiatrists provide you with tailored services for your mental health and well-being.
+          </p>
+        </div>
 
       <div className="grid md:grid-cols-2 gap-8 lg:gap-10">
         {therapies.map((therapy) => (
