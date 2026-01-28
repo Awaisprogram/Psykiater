@@ -1,121 +1,139 @@
+import therapy1 from "../../assets/therapy1.jpg";
+import therapy2 from "../../assets/therapy2.jpg";
+import therapy3 from "../../assets/therapy3.jpg";
+import therapy4 from "../../assets/therapy4.jpg";
+import article1 from "../../assets/article1.jpg";
+
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center jsustify-center pt-20 overflow-hidden bg-gradient-to-br from-slate-50 via-teal-50/30 to-blue-50/20">
-      {/* Decorative Background Elements */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-20 right-10 w-72 h-72 bg-teal-200/20 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-20 left-10 w-96 h-96 bg-blue-200/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
-      </div>
-
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-20 relative z-10">
-        <div className="grid lg:grid-cols-3 gap-12 items-center">
-          {/* Top Right - Various conditions */}
-        <div className="grid grid-cols-2 gap-4 lg:gap-6">
-            {/*  Left - Grid images */}
-            <div className="space-y-4 lg:space-y-6 animate-slideUp delay-100">
-              <div className="aspect-[3/4] rounded-2xl overflow-hidden shadow-xl transform hover:scale-105 transition-transform duration-300">
-                <div className="w-full h-full bg-gradient-to-br from-blue-200 to-teal-200 flex items-center justify-center">
-                  <span className="text-white text-sm">Meditation</span>
-                </div>
-              </div>
-              <div className="aspect-[3/4] rounded-2xl overflow-hidden shadow-xl transform hover:scale-105 transition-transform duration-300">
-                <div className="w-full h-full bg-gradient-to-br from-amber-200 to-orange-200 flex items-center justify-center">
-                  <span className="text-white text-sm">Therapy Session</span>
-                </div>
-              </div>
-            </div>
-
-            {/* Top Right - Various conditions */}
-            <div className="space-y-4 lg:space-y-6 pt-8 lg:pt-20 animate-slideUp delay-200">
-              <div className="aspect-[3/4] rounded-2xl overflow-hidden shadow-xl transform hover:scale-105 transition-transform duration-300">
-                <div className="w-full h-full bg-gradient-to-br from-slate-300 to-gray-300 flex items-center justify-center">
-                  <span className="text-white text-sm">Depression Support</span>
-                </div>
-              </div>
-              <div className="aspect-square rounded-2xl overflow-hidden shadow-xl transform hover:scale-105 transition-transform duration-300">
-                <div className="w-full h-full bg-gradient-to-br from-teal-300 to-emerald-300 flex items-center justify-center">
-                  <span className="text-white text-sm">Anxiety Treatment</span>
-                </div>
-              </div>
-              
-            </div>
-          </div>
-          
+    <section className="relative min-h-100vh lg:h-[120vh] overflow-hidden pt-20 bg-white overflow-hidden">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-12">
+        {/* Content and Images Container */}
+        <div className="relative">
           {/* Center Content */}
-          <div className="space-y-8 animate-fadeIn">
-            <div className="space-y-4 text-center">
-              <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                Psychiatrist <span className="text-teal-700">Online</span>
-              </h1>
-              <p className="text-xl text-center lg:text-2xl text-gray-600 font-light italic leading-relaxed">
-                Get Professional Help From Our Psychiatrist and Psychologist Online
-              </p>
-            </div>
-
-            <p className="text-gray-600 leading-relaxed max-w-xl text-center">
+          <div className="text-center mb-8 relative z-10 max-w-4xl mx-auto">
+            <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-teal-900 leading-tight mb-4">
+              Psychiatrist Online
+            </h1>
+            <p className="text-xl lg:text-2xl text-gray-600 font-light italic leading-relaxed mb-6">
+              Get Professional Help From Our Psychiatrist <br /> and Psychologist Online
+            </p>
+            
+            <p className="text-gray-600 leading-relaxed mb-8">
               We perform clinical evaluations, diagnostic assessments, and offer treatment for a wide range of mental health and addiction conditions. You can access us online, by phone, or in person.
             </p>
 
-            <div className="flex flex-wrap justify-center items-center gap-2">
-              <button className="bg-teal-700 hover:bg-teal-800 text-white px-8 py-4 rounded-lg font-medium transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
-                Video Consultation
-              </button>
-              <button className="bg-white hover:bg-gray-50 text-teal-700 px-8 py-4 rounded-lg font-medium border-2 border-teal-700 transition-all duration-200 hover:shadow-lg transform hover:-translate-y-1">
-                Meeting in Oslo & Ski
-              </button>
+            {/* CTA Buttons with decorative line */}
+            <div className="relative inline-block">
+              <div className="flex flex-wrap justify-center gap-4 mb-32">
+                <button className="bg-teal-700 hover:bg-teal-800 text-white px-8 py-3.5 rounded-lg font-medium transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                  Video Consultation
+                </button>
+                <button className="bg-white hover:bg-gray-50 text-teal-700 px-8 py-3.5 rounded-lg font-medium border-2 border-teal-700 transition-all duration-200 hover:shadow-lg transform hover:-translate-y-1">
+                  Meeting in Oslo & Ski
+                </button>
+              </div>
+             
             </div>
           </div>
 
-          {/* Right Grid Images */}
-          <div className="grid grid-cols-2 gap-2 lg:gap-4">
-            {/* Top Left - Meditation */}
-            <div className="space-y-4 lg:space-y-6 animate-slideUp delay-100">
-              <div className="aspect-[3/4] rounded-2xl overflow-hidden shadow-xl transform hover:scale-105 transition-transform duration-300">
-                <div className="w-full h-full bg-gradient-to-br from-blue-200 to-teal-200 flex items-center justify-center">
-                  <span className="text-white text-sm">Meditation</span>
+          {/* Image Grid - Exact Layout with Overlapping Side Images */}
+          <div className="relative -mt-32 md:-mt-72 lg:-mt-56">
+            <div className="flex items-start justify-between gap-4">
+              {/* Left Side - 2 images (starts overlapping content) */}
+              <div className="hidden md:block w-32 lg:w-40 flex-shrink-0 space-y-4">
+                {/* Top Left - Meditation woman (tall) */}
+                <div className="rounded-2xl overflow-hidden shadow-xl h-80 lg:h-96">
+                  <img
+                    src={therapy3}
+                    alt="Meditation"
+                    loading="lazy"
+                    decoding="async"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                {/* Bottom Left - Work stress */}
+                <div className="rounded-2xl overflow-hidden shadow-xl h-56 lg:h-64">
+                  <img
+                    src={therapy2}
+                    alt="Work Stress"
+                    loading="lazy"
+                    decoding="async"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
-              <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-xl transform hover:scale-105 transition-transform duration-300">
-                <div className="w-full h-full bg-gradient-to-br from-amber-200 to-orange-200 flex items-center justify-center">
-                  <span className="text-white text-sm">Therapy Session</span>
+
+              {/* Center - 3 images in a row */}
+              <div className="flex-1 grid grid-cols-3 gap-4 pt-36 md:pt-32">
+                {/* Depression */}
+                <div className="rounded-2xl overflow-hidden shadow-xl h-56 md:h-64 lg:h-80">
+                  <img
+                    src={therapy4}
+                    alt="Depression"
+                    loading="lazy"
+                    decoding="async"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                
+                {/* Anxiety */}
+                <div className="rounded-2xl mt-20 overflow-hidden shadow-xl h-56 md:h-64 lg:h-80">
+                  <img
+                    src={therapy1}
+                    alt="Anxiety"
+                    loading="lazy"
+                    decoding="async"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+
+                {/* Couple Therapy */}
+                <div className="rounded-2xl overflow-hidden shadow-xl h-56 md:h-64 lg:h-80">
+                  <img
+                    src={article1}
+                    alt="Couple Therapy"
+                    loading="lazy"
+                    decoding="async"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+
+              {/* Right Side - 2 images (starts overlapping content) */}
+              <div className="hidden md:block w-32 lg:w-40 flex-shrink-0 space-y-4">
+                {/* Top Right - Sleep issues (tall) */}
+                <div className="rounded-2xl overflow-hidden shadow-xl h-80 lg:h-96">
+                  <img
+                    src={therapy2}
+                    alt="Sleep Issues"
+                    loading="lazy"
+                    decoding="async"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                {/* Bottom Right - Trauma */}
+                <div className="rounded-2xl overflow-hidden shadow-xl h-56 lg:h-64">
+                  <img
+                    src={therapy4}
+                    alt="Trauma"
+                    loading="lazy"
+                    decoding="async"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
             </div>
 
-            {/* Top Right - Various conditions */}
-            <div className="space-y-4 lg:space-y-6 pt-8 lg:pt-12 animate-slideUp delay-200">
-              <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-xl transform hover:scale-105 transition-transform duration-300">
-                <div className="w-full h-full bg-gradient-to-br from-slate-300 to-gray-300 flex items-center justify-center">
-                  <span className="text-white text-sm">Depression Support</span>
-                </div>
-              </div>
-              <div className="aspect-square rounded-2xl overflow-hidden shadow-xl transform hover:scale-105 transition-transform duration-300">
-                <div className="w-full h-full bg-gradient-to-br from-teal-300 to-emerald-300 flex items-center justify-center">
-                  <span className="text-white text-sm">Anxiety Treatment</span>
-                </div>
-              </div>
-              <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-xl transform hover:scale-105 transition-transform duration-300">
-                <div className="w-full h-full bg-gradient-to-br from-rose-200 to-pink-200 flex items-center justify-center">
-                  <span className="text-white text-sm">Couple Therapy</span>
-                </div>
-              </div>
-            </div>
+            {/* Bottom gradient fade effect */}
+            <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white via-white/80 to-transparent pointer-events-none"></div>
           </div>
-
         </div>
-      </div>
-
-      {/* Bottom wave decoration */}
-      <div className="absolute bottom-0 left-0 right-0">
-        <svg className="w-full h-24 text-white" viewBox="0 0 1200 120" preserveAspectRatio="none">
-          <path 
-            d="M0,60 C200,100 400,20 600,60 C800,100 1000,20 1200,60 L1200,120 L0,120 Z" 
-            fill="currentColor"
-          />
-        </svg>
       </div>
     </section>
   );
 };
+
+
 
 export default Hero

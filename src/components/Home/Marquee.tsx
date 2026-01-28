@@ -13,7 +13,8 @@ const Marquee = () => {
   ];
 
   return (
-    <section className="relative py-4 bg-lime-100 overflow-hidden">
+    <div className="shadow-[0_0_30px_rgba(34,197,94,0.6)] rounded-xl">
+    <section className="relative py-8 bg-lime-100 overflow-hidden rounded-xl">
       <div className="flex animate-marquee whitespace-nowrap">
         {/* First set */}
         {services.map((service, index) => (
@@ -31,6 +32,7 @@ const Marquee = () => {
         ))}
       </div>
     </section>
+    </div>
   );
 };
 
