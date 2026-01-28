@@ -6,6 +6,11 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        serif: ['"Inria Serif"', 'serif'],
+        sans: ['"Inria Sans"', 'sans-serif'],
+        inter: ['"Inter"', 'sans-serif'],
+      },
       keyframes: {
         marquee: {
           '0%': { transform: 'translateX(0%)' },

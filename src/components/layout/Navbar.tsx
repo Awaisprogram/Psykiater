@@ -48,7 +48,7 @@ const Navbar = () => {
                 src={logo} 
                 alt="Logo" 
                 
-                className=" h-auto object-contain transition-transform duration-300 group-hover:scale-105"
+                className="w-[187px] h-[74px] object-cover transition-transform duration-300 group-hover:scale-105"
               />
             </Link>
 
