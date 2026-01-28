@@ -13,7 +13,7 @@ function DoTogether() {
   ];
   return (
     <>
-      <div className="min-h-screen bg-gradient-to-br from-slate-50 via-teal-50/30 to-blue-50/20">
+      <div className="min-h-screen ">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>

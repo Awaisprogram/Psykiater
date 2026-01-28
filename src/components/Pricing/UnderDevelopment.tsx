@@ -2,7 +2,7 @@ import { Hammer, Clock, Mail, ArrowRight, Check } from "lucide-react";
 
 const UnderDevelopment = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center pt-20 overflow-hidden bg-gradient-to-br from-slate-50 via-teal-50/30 to-blue-50/20">
+    <section className="min-h-screen flex items-center justify-center pt-20 overflow-hidden">
       {/* Decorative Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-20 right-10 w-72 h-72 bg-teal-200/20 rounded-full blur-3xl animate-pulse"></div>

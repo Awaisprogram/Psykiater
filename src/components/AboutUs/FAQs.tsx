@@ -37,7 +37,7 @@ function FAQ() {
   };
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 ">
       <div className="max-w-4xl mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-16 animate-fadeIn">
