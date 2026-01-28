@@ -40,14 +40,15 @@ const Navbar = () => {
           scrolled ? 'bg-white/95 backdrop-blur-md shadow-lg' : 'bg-transparent'
         }`}
       >
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto  lg:px-2">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
-            <Link to="/" className="flex items-center space-x-3 group cursor-pointer">
+            <Link to="/" className="flex items-center space-x-3 group cursor-pointer w-[187px]">
               <img 
                 src={logo} 
                 alt="Logo" 
-                className="w-[187px] h-auto object-contain transition-transform duration-300 group-hover:scale-105"
+                
+                className=" h-auto object-contain transition-transform duration-300 group-hover:scale-105"
               />
             </Link>
 
