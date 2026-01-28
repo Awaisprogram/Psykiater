@@ -60,8 +60,8 @@ const Footer = () => {
           <div className="lg:px-20 p-2 w-full flex  justify-between items-center flex-wrap mb-6 gap-4 lg:gap-0">
             <span className="flex items-center space-x-2 sm:space-x-3 text-sm sm:text-base order-2 lg:order-1">
               <DenmarkFlag className="w-8 h-5 w-12 h-8 rounded-lg flex-shrink-0" />
-              <span className="hidden sm:inline">Psykiatriker Sweden</span>
-              <span className="lg:hidden block">Sweden</span>
+              <span className="hidden sm:inline text-black">Psykiatriker Sweden</span>
+              <span className="lg:hidden block text-black">Sweden</span>
             </span>
 
             <Link
@@ -76,8 +76,8 @@ const Footer = () => {
             </Link>
             <span className="flex items-center space-x-2 sm:space-x-3 text-sm sm:text-base order-3">
               <SwedenFlag className="w-8 h-5 w-12 h-8 rounded-lg flex-shrink-0" />
-              <span className="hidden sm:inline">DEN NORSKE LEGEFORENING</span>
-              <span className="lg:hidden block">Norwegian</span>
+              <span className="hidden sm:inline text-black">DEN NORSKE LEGEFORENING</span>
+              <span className="lg:hidden block text-black">Norwegian</span>
             </span>
           </div>
 
@@ -96,7 +96,7 @@ const Footer = () => {
               <input
                 type="email"
                 placeholder="Enter Your Email"
-                className="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-700 focus:border-transparent text-sm"
+                className="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-700 focus:border-transparent text-sm bg-white"
               />
               <button className="px-6 py-3 bg-teal-700 hover:bg-teal-800 text-white rounded-lg font-medium transition-colors whitespace-nowrap text-sm">
                 Subscribe

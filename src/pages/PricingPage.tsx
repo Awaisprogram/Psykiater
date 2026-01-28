@@ -2,7 +2,7 @@ import UnderConstruction from "../components/Pricing/UnderDevelopment"
 
 function PricingPage() {
   return (
-    <div>
+    <div className="bg-white">
       <UnderConstruction />
     </div>
   )

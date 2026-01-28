@@ -52,10 +52,10 @@ function FAQ() {
         {/* FAQ Items */}
         <div className="space-y-0">
           {faqs.map((faq, index) => (
-            <div key={index} className="border-b border-gray-200 last:border-transparent">
+            <div key={index} className="border-b  border-gray-200 last:border-transparent ">
               <button
                 onClick={() => toggleFAQ(index)}
-                className="w-full text-left py-6 flex justify-between items-center gap-4 hover:bg-gray-50 transition-colors duration-300 focus:outline-none"
+                className="w-full text-left py-6 flex justify-between items-center gap-4 hover:bg-gray-50 transition-colors duration-300 focus:outline-none  bg-white"
                 aria-expanded={openIndex === index}
               >
                 <span className="text-lg font-semibold text-gray-900 pr-4">

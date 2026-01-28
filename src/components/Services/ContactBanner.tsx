@@ -14,7 +14,7 @@ const ContactBanner = () => {
             Do you need help from a psychiatrist?
             </p>
             
-            <div className="flex flex-wrap gap-2 ">
+            <div className="flex flex-wrap justify-center items-center gap-2 ">
               <button className="bg-[#D5EB7B] text-lg  text-teal-700 px-4 py-2 rounded-lg font-bold">
               View Available Hours
               </button>

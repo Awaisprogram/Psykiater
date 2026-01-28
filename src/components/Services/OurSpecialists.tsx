@@ -22,10 +22,10 @@ const OurSpecialist = () => {
   ];
 
   return (
-    <section className="py-20 ">
+    <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 bg-white">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
             Our Specialist
           </h2>

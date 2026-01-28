@@ -3,7 +3,7 @@ import Cards from '../components/Contact/Cards';
 import BookingAndLocations from '../components/Contact/Location';
 const ContactPage = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-teal-50/30 to-blue-50/20 pt-24">
+    <div className="min-h-screen bg-white pt-24">
       <BookAppointment/>
       <Cards/>
       <BookingAndLocations/>
