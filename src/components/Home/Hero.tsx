@@ -25,7 +25,7 @@ const Hero = () => {
 
             {/* CTA Buttons with decorative line */}
             <div className="relative inline-block">
-              <div className="flex flex-wrap justify-center gap-4 mb-32">
+              <div className="flex flex-wrap justify-center gap-4 lg:mb-32 mb-8">
                 <button className="bg-teal-700 hover:bg-teal-800 text-white px-8 py-3.5 rounded-lg font-medium transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
                   Video Consultation
                 </button>
