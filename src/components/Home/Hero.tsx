@@ -37,13 +37,36 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Image Grid - Exact Layout with Overlapping Side Images */}
+          {/* Image Grid - Responsive Layout */}
           <div className="relative -mt-8 md:-mt-24 lg:-mt-96 lg:h-[90vh] overflow-hidden">
-            <div className="flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4">
-              {/* Left Side - 2 images - hidden on small screens, visible on lg+ */}
-              <div className="hidden lg:block w-full md:w-auto flex md:flex-col gap-3 md:gap-4 justify-center md:justify-start">
+            {/* Mobile/Tablet View - Only 2 Images */}
+            <div className="flex lg:hidden justify-center gap-4 px-4 pt-8">
+              <div className="rounded-lg overflow-hidden shadow-xl w-[45%] max-w-[200px] h-[240px] md:h-[300px]">
+                <img
+                  src={therapy3}
+                  alt="Meditation"
+                  loading="lazy"
+                  decoding="async"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="rounded-lg overflow-hidden shadow-xl w-[45%] max-w-[200px] h-[240px] md:h-[300px]">
+                <img
+                  src={therapy1}
+                  alt="Therapy Session"
+                  loading="lazy"
+                  decoding="async"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+
+            {/* Desktop View - Full Layout */}
+            <div className="hidden lg:flex items-center justify-between gap-3 lg:gap-4">
+              {/* Left Side - 2 images */}
+              <div className="flex flex-col gap-4 justify-start">
                 {/* Top Left - Meditation woman (tall) */}
-                <div className="rounded-lg overflow-hidden shadow-xl w-[calc(50%-6px)] md:w-[140px] lg:w-[180px] xl:w-[220px] h-[180px] md:h-[200px] lg:h-[244px]">
+                <div className="rounded-lg overflow-hidden shadow-xl w-[180px] xl:w-[220px] h-[244px]">
                   <img
                     src={therapy3}
                     alt="Meditation"
@@ -53,7 +76,7 @@ const Hero = () => {
                   />
                 </div>
                 {/* Bottom Left - Work stress */}
-                <div className="rounded-lg overflow-hidden shadow-xl w-[calc(50%-6px)] md:w-[140px] lg:w-[180px] xl:w-[220px] h-[180px] md:h-[200px] lg:h-[244px]">
+                <div className="rounded-lg overflow-hidden shadow-xl w-[180px] xl:w-[220px] h-[244px]">
                   <img
                     src={therapy2}
                     alt="Work Stress"
@@ -64,35 +87,70 @@ const Hero = () => {
                 </div>
               </div>
 
-              {/* Center - 2 images in a row (always visible) */}
-              <div className="w-full md:flex-1 grid grid-cols-2 gap-2 md:gap-3 lg:gap-4 pt-8 md:pt-28">
-                {/* First Center Image */}
-                <div className="rounded-lg mt-4 md:mt-8 lg:mt-40 overflow-hidden shadow-xl h-[140px] md:h-[180px] lg:h-[220px] xl:h-[244px]">
-                  <img
-                    src={therapy4}
-                    alt="Therapy"
-                    loading="lazy"
-                    decoding="async"
-                    className="w-full h-full object-cover"
-                  />
+              {/* Center - 3 columns */}
+              <div className="flex-1 grid grid-cols-3 gap-4 pt-28 max-w-4xl mx-auto">
+                {/* Column 1 - Depression */}
+                <div className="flex flex-col gap-4 justify-start mt-40">
+                  <div className="rounded-lg overflow-hidden shadow-xl w-[180px] xl:w-[220px] h-[244px]">
+                    <img
+                      src={therapy4}
+                      alt="Depression Support"
+                      loading="lazy"
+                      decoding="async"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className="rounded-lg overflow-hidden shadow-xl w-[180px] xl:w-[220px] h-[244px]">
+                    <img
+                      src={therapy1}
+                      alt="Mental Health"
+                      loading="lazy"
+                      decoding="async"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
                 </div>
                 
-                {/* Second Center Image */}
-                <div className="rounded-lg mt-4 md:mt-8 lg:mt-56 overflow-hidden shadow-xl h-[140px] md:h-[180px] lg:h-[220px] xl:h-[244px]">
-                  <img
-                    src={therapy1}
-                    alt="Anxiety"
-                    loading="lazy"
-                    decoding="async"
-                    className="w-full h-full object-cover"
-                  />
+                {/* Column 2 - Anxiety (single centered image) */}
+                <div className="flex justify-center mt-56">
+                  <div className="rounded-lg overflow-hidden shadow-xl w-[220px] xl:w-[244px] h-[244px]">
+                    <img
+                      src={therapy1}
+                      alt="Anxiety Treatment"
+                      loading="lazy"
+                      decoding="async"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                </div>
+
+                {/* Column 3 - Couple Therapy */}
+                <div className="flex flex-col gap-4 justify-start mt-40">
+                  <div className="rounded-lg overflow-hidden shadow-xl w-[180px] xl:w-[220px] h-[244px]">
+                    <img
+                      src={therapy3}
+                      alt="Couple Therapy"
+                      loading="lazy"
+                      decoding="async"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className="rounded-lg overflow-hidden shadow-xl w-[180px] xl:w-[220px] h-[244px]">
+                    <img
+                      src={therapy2}
+                      alt="Family Support"
+                      loading="lazy"
+                      decoding="async"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
                 </div>
               </div>
 
-              {/* Right Side - 2 images - hidden on small screens, visible on lg+ */}
-              <div className="hidden lg:block w-full md:w-auto flex md:flex-col gap-3 md:gap-4 justify-center md:justify-end mt-3 md:mt-0">
+              {/* Right Side - 2 images */}
+              <div className="flex flex-col gap-4 justify-end">
                 {/* Top Right - Sleep issues (tall) */}
-                <div className="rounded-lg overflow-hidden shadow-xl w-[calc(50%-6px)] md:w-[140px] lg:w-[180px] xl:w-[220px] h-[180px] md:h-[200px] lg:h-[244px]">
+                <div className="rounded-lg overflow-hidden shadow-xl w-[180px] xl:w-[220px] h-[244px]">
                   <img
                     src={therapy2}
                     alt="Sleep Issues"
@@ -102,10 +160,10 @@ const Hero = () => {
                   />
                 </div>
                 {/* Bottom Right - Trauma */}
-                <div className="rounded-lg overflow-hidden shadow-xl w-[calc(50%-6px)] md:w-[140px] lg:w-[180px] xl:w-[220px] h-[180px] md:h-[200px] lg:h-[244px]">
+                <div className="rounded-lg overflow-hidden shadow-xl w-[180px] xl:w-[220px] h-[244px]">
                   <img
                     src={therapy4}
-                    alt="Trauma"
+                    alt="Trauma Support"
                     loading="lazy"
                     decoding="async"
                     className="w-full h-full object-cover"
@@ -120,13 +178,9 @@ const Hero = () => {
           
         </div>
       </div>
-            <Marquee/>
-           
+      <Marquee/>
     </section>
   );
 };
 
-
-
 export default Hero
-
