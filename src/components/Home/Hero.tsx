@@ -13,13 +13,13 @@ const Hero = () => {
         <div className="relative ">
           {/* Center Content */}
           <div className="text-center   mb-8 relative z-10 flex flex-col items-center justify-center">
-            <h1 className="text-5xl font-bold text-teal-900 leading-tight mb-4 px-[8px]">
+            <h1 className="text-4xl lg:text-[64px] xl:text-6xl font-bold text-teal-900 leading-tight mb-4 py-[16px] px-[8px]">
               Psychiatrist Online
             </h1>
-            <p className="text-4xl font-bold italic italic mb-6">
+            <p className="text-xl lg:text-[32px] text-[#454545] font-serif font-bold italic italic mb-6 lg:w-[683px] lg:h-[87px] lg:leading-[43.2px]">
               Get Professional Help From Our Psychiatrist  and Psychologist Online
             </p>
-            <p className="text-3xl leading-relaxed mb-8">
+            <p className="text-ld text-[#595959] lg:text-[20px] leading-relaxed mb-8 lg:w-[639px] lg:h-[96px]">
               We perform clinical evaluations, diagnostic assessments, and offer treatment for a wide range of mental health and addiction conditions. You can access us online, by phone, or in person.
             </p>
 
