@@ -1,3 +1,4 @@
+import { motion } from "motion/react";
 import article1 from "../../assets/article1.jpg";
 import article2 from "../../assets/article2.jpg";
 import article3 from "../../assets/article3.jpg";
@@ -22,10 +23,22 @@ const articles = [
 
 const MostReadArticles = () => {
   return (
-    <section className="bg-white py-20">
+    <motion.section 
+      className="bg-white py-20"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.8 }}
+    >
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
-        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-10">
+        <motion.div 
+          className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-10"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+        >
           <div>
             <h2 className="text-3xl font-serif text-gray-800">
               Most Read Articles
@@ -36,25 +49,38 @@ const MostReadArticles = () => {
             </p>
           </div>
 
-          <button className="self-start md:self-auto px-5 py-2 rounded-md bg-emerald-700 text-white text-sm font-medium hover:bg-emerald-800 transition">
+          <motion.button 
+            className="self-start md:self-auto px-5 py-2 rounded-md bg-emerald-700 text-white text-sm font-medium hover:bg-emerald-800 transition"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
             View All
-          </button>
-        </div>
+          </motion.button>
+        </motion.div>
 
         {/* Articles Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {articles.map((article) => (
-            <div key={article.id} className="group">
+          {articles.map((article, index) => (
+            <motion.div 
+              key={article.id} 
+              className="group"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.3 + (index * 0.15) }}
+            >
             {/* Image */}
               <div className="overflow-hidden rounded-xl">
-                <img
+                <motion.img
                   src={article.image}
                   alt={article.title}
                   loading="lazy"
                   decoding="async"
                   width="400"
                   height="224"
-                  className="h-56 w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  className="h-56 w-full object-cover"
+                  whileHover={{ scale: 1.1 }}
+                  transition={{ duration: 0.4 }}
                 />
                 {/* Low Quality Placeholder */}
                 <div className="absolute inset-0 bg-gradient-to-br from-gray-100 to-gray-200 -z-10" />
@@ -66,21 +92,26 @@ const MostReadArticles = () => {
                   {article.title}
                 </h3>
 
-                <a
+                <motion.a
                   href="#"
                   className="inline-flex items-center gap-2 text-sm font-medium text-emerald-700 hover:text-emerald-800 transition"
+                  whileHover={{ x: 5 }}
                 >
                   Read More
-                  <span className="inline-flex items-center justify-center w-6 h-6 rounded-full border border-emerald-700 text-emerald-700 group-hover:bg-emerald-700 group-hover:text-white transition">
+                  <motion.span 
+                    className="inline-flex items-center justify-center w-6 h-6 rounded-full border border-emerald-700 text-emerald-700 group-hover:bg-emerald-700 group-hover:text-white transition"
+                    whileHover={{ rotate: 45 }}
+                    transition={{ duration: 0.2 }}
+                  >
                     →
-                  </span>
-                </a>
+                  </motion.span>
+                </motion.a>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

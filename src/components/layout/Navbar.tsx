@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import logo from '../../assets/logo.png';
 import { RxHamburgerMenu } from "react-icons/rx";
+import Button from "../ui/Button";
 
 
 const Navbar = () => {
@@ -65,8 +66,8 @@ const Navbar = () => {
                   {link.label}
                 </Link>
               ))}
-              <Link to="/contact" className="bg-teal-700 hover:bg-teal-800 text-white px-6 py-2.5 rounded-lg text-sm font-medium transition-all duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-0.5 inline-block">
-                Book An Appointment
+              <Link to="/contact" >
+              <Button text={"Book An Appointment"}/>
               </Link>
             </div>
 

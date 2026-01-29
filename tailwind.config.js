@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      colors: {
+        brand: '#1D6361',
+      },
       fontFamily: {
         serif: ['"Inria Serif"', 'serif'],
         sans: ['"Inria Sans"', 'sans-serif'],

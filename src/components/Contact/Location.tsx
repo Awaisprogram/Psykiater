@@ -1,5 +1,6 @@
 import { MapPin, ArrowRight, Check } from 'lucide-react';
 import Location from '../../assets/Location.jpg';
+import Button from '../ui/Button';
 
 const BookingAndLocations = () => {
   
@@ -62,10 +63,8 @@ const BookingAndLocations = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-wrap gap-4 pt-4">
-              <button className="bg-teal-700 hover:bg-teal-800 text-white px-8 py-4 rounded-xl font-medium transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
-                Book Confidential Consultation
-              </button>
-              <button className="bg-white hover:bg-gray-50 text-teal-700 px-8 py-4 rounded-xl font-medium border-2 border-teal-700 transition-all duration-200 hover:shadow-lg transform hover:-translate-y-1">
+              <Button  text={"Book Confidential Consultation"}/>
+              <button className="bg-white hover:bg-gray-50 text-teal-700 px-8 py-2 rounded-xl font-medium border-2 border-teal-700 transition-all duration-200 hover:shadow-lg transform hover:-translate-y-1">
                 Call Us Now
               </button>
             </div>

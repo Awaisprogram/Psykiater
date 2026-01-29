@@ -5,6 +5,7 @@ import therapy3 from "../../assets/therapy3.jpg";
 import therapy4 from "../../assets/therapy4.jpg";
 import article1 from "../../assets/article1.jpg";
 import Marquee from './Marquee'
+import Button from '../ui/Button'
 
 const Hero = () => {
   return (
@@ -20,7 +21,7 @@ const Hero = () => {
             transition={{ duration: 0.8 }}
           >
             <motion.h1 
-              className="text-4xl lg:text-[64px] xl:text-6xl font-bold text-teal-900 leading-tight mb-4 py-[16px] px-[8px]"
+              className="text-4xl lg:text-[64px] xl:text-6xl font-bold text-[#1D6361] leading-tight mb-4 py-[16px] px-[8px]"
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
@@ -52,13 +53,9 @@ const Hero = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.6 }}
               >
-                <motion.button 
-                  className="bg-teal-700 hover:bg-teal-800 text-white px-8 py-3.5 rounded-lg font-medium transition-all duration-200 shadow-lg hover:shadow-xl"
-                  whileHover={{ scale: 1.05, y: -4 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  Video Consultation
-                </motion.button>
+               
+                  <Button text={" Video Consultation"}/>
+                 
                 <motion.p 
                   className="text-teal-700 px-8 py-3.5 font-medium border-b border-b-teal-700 cursor-default"
                   whileHover={{ scale: 1.02 }}

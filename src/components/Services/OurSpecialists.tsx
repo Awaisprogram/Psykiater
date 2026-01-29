@@ -1,5 +1,6 @@
 import OurSpecialist1 from "../../assets/OurSpecialist1.png";
 import OurSpecialist2 from "../../assets/OurSpecialist2.png";
+import Button from '../ui/Button'
 
 const OurSpecialist = () => {
   const specialists = [
@@ -70,9 +71,7 @@ const OurSpecialist = () => {
 
                 {/* Action Buttons */}
                 <div className="flex flex-col sm:flex-row gap-3 justify-center">
-                  <button className="bg-teal-700 hover:bg-teal-800 text-white px-6 py-3 rounded-lg font-medium transition-all duration-200 transform hover:-translate-y-0.5">
-                    Book An Appointment
-                  </button>
+                <Button text={"Book An Appointment"}/>
                   <p className=" text-teal-700 px-6 py-3  font-medium border-b-2 border-teal-700 ">
                     View Profile
                   </p>
