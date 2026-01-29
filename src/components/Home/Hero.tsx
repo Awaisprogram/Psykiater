@@ -68,7 +68,7 @@ const Hero = () => {
                 {/* Top Left - Meditation woman (tall) */}
                 <div className="rounded-lg overflow-hidden shadow-xl w-[180px] xl:w-[220px] h-[244px]">
                   <img
-                    src={therapy3}
+                    src={article1}
                     alt="Meditation"
                     loading="lazy"
                     decoding="async"
