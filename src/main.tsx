@@ -5,7 +5,7 @@ import App from './App.tsx'
 import './index.css'
 import Navbar from './components/layout/Navbar.tsx'
 import Footer from './components/layout/Footer.tsx'
-import ScrollToTop from "./components/ScrollToTop.tsx";
+import ScrollToTop from "./components/provider/ScrollToTop.tsx";
 
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
