@@ -1,5 +1,6 @@
 "use client";
 import { useState } from 'react';
+import { motion, AnimatePresence } from 'motion/react';
 
 interface FAQItem {
   question: string;
@@ -37,25 +38,38 @@ function FAQ() {
   };
 
   return (
-    <section className="py-20 ">
+    <section className="py-20">
       <div className="max-w-4xl mx-auto px-6">
         {/* Section Header */}
-        <div className="text-center mb-16 animate-fadeIn">
+        <motion.div 
+          className="text-center mb-16"
+          initial={{ opacity: 0, y: -30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6 }}
+        >
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
             Frequently Asked Questions
           </h2>
           <p className="text-gray-600 text-lg">
             Here you can find all the help and answers you need for your mental health in one place.
           </p>
-        </div>
+        </motion.div>
 
         {/* FAQ Items */}
         <div className="space-y-0">
           {faqs.map((faq, index) => (
-            <div key={index} className="border-b  border-gray-200 last:border-transparent ">
+            <motion.div
+              key={index}
+              className="border-b border-gray-200 last:border-transparent"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+            >
               <button
                 onClick={() => toggleFAQ(index)}
-                className="w-full text-left py-6 flex justify-between items-center gap-4 hover:bg-gray-50 transition-colors duration-300 focus:outline-none  bg-white"
+                className="w-full text-left py-6 flex justify-between items-center gap-4 hover:bg-gray-50 transition-colors duration-300 focus:outline-none bg-white"
                 aria-expanded={openIndex === index}
               >
                 <span className="text-lg font-semibold text-gray-900 pr-4">
@@ -63,25 +77,36 @@ function FAQ() {
                 </span>
                 
                 {/* Plus/Minus Icon */}
-                <div className="flex-shrink-0 w-6 h-6 flex items-center justify-center">
-                  <span className={`w-4 h-0.5 bg-teal-700 transition-transform duration-300 ${openIndex === index ? 'rotate-180' : ''}`}></span>
-                  <span className={`absolute w-4 h-0.5 bg-teal-700 transition-transform duration-300 ${openIndex === index ? '' : 'rotate-90'}`}></span>
-                </div>
+                <motion.div 
+                  className="flex-shrink-0 w-6 h-6 flex items-center justify-center relative"
+                  animate={{ rotate: openIndex === index ? 180 : 0 }}
+                  transition={{ duration: 0.3 }}
+                >
+                  <span className="w-4 h-0.5 bg-teal-700"></span>
+                  <motion.span 
+                    className="absolute w-4 h-0.5 bg-teal-700"
+                    animate={{ rotate: openIndex === index ? 0 : 90 }}
+                    transition={{ duration: 0.3 }}
+                  ></motion.span>
+                </motion.div>
               </button>
 
               {/* Answer */}
-              <div
-                className="overflow-hidden transition-all duration-500 ease-out"
-                style={{
-                  maxHeight: openIndex === index ? '300px' : '0',
-                  opacity: openIndex === index ? 1 : 0,
-                }}
-              >
-                <p className="text-gray-600   leading-relaxed p-10 ">
-                  {faq.answer}
-                </p>
-              </div>
-            </div>
+              <AnimatePresence>
+                {openIndex === index && (
+                  <motion.div
+                    initial={{ opacity: 0, height: 0 }}
+                    animate={{ opacity: 1, height: "auto" }}
+                    exit={{ opacity: 0, height: 0 }}
+                    transition={{ duration: 0.4, ease: "easeInOut" }}
+                  >
+                    <p className="text-gray-600 leading-relaxed p-6 pt-0">
+                      {faq.answer}
+                    </p>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </motion.div>
           ))}
         </div>
       </div>
