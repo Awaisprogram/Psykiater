@@ -70,7 +70,7 @@ const Hero = () => {
 
           {/* Image Grid - Responsive Layout */}
           <motion.div 
-            className="relative -mt-8 md:-mt-24 lg:-mt-96 lg:h-[562px] overflow-hidden"
+            className="relative -mt-8 md:-mt-24 lg:-mt-96 max-w-[1200px] mx-auto lg:h-[562px] overflow-hidden"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 0.8 }}

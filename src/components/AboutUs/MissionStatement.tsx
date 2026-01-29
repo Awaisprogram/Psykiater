@@ -1,6 +1,6 @@
 const MissionStatement = () => {
   return (
-    <section className="relative py-24 bg-white overflow-hidden">
+    <section className="relative py-24 max-w-[1200px] mx-auto bg-white overflow-hidden">
       {/* Floating Labels */}
       <div className="absolute top-8 left-12 lg:left-24">
         <div className="bg-teal-700 text-white px-6 py-2.5 rounded-full text-sm font-medium transform -rotate-12 shadow-lg">

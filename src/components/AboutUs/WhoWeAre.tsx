@@ -10,7 +10,7 @@ function DoTogether() {
   ];
   return (
     <>
-      <div className="min-h-screen bg-[#F0F8FF]">
+      <div className="bg-[#F0F8FF]">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="aspect-square rounded-2xl overflow-hidden ">
