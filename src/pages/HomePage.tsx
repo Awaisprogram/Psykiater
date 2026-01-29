@@ -7,7 +7,7 @@ function HomePage() {
   return (
     <>
       <HeroSection />
-      <Marquee />
+      {/* <Marquee /> */}
       <InfoHighlight />
       <MostReadArticles />
     </>

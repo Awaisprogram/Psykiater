@@ -13,14 +13,15 @@ const Marquee = () => {
   ];
 
   return (
-    <div className="shadow-[0_0_30px_rgba(34,197,94,0.6)] rounded-xl">
-    <section className="relative py-8 bg-lime-100 overflow-hidden rounded-xl">
-      <div className="flex animate-marquee whitespace-nowrap">
+    
+    <div >
+    <section className="relative  bg-[#D5EB7C] overflow-hidden">
+      <div className="flex animate-marquee whitespace-nowrap py-8 px-8">
         {/* First set */}
         {services.map((service, index) => (
           <div key={`first-${index}`} className="inline-flex items-center mx-8">
-            <span className="text-gray-700 text-2xl font-medium">{service}</span>
-            <div className="ml-8 text-2xl text-green-900 ">✦ </div>
+            <div className="mr-2 text-[32px] text-[#1D6361] ">✦ </div>
+            <span className="text-gray-700 text-[32px] font-bold font-serif ">{service}</span>
           </div>
         ))}
         {/* Duplicate for seamless loop */}

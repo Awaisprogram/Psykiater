@@ -3,23 +3,23 @@ import therapy2 from "../../assets/therapy2.jpg";
 import therapy3 from "../../assets/therapy3.jpg";
 import therapy4 from "../../assets/therapy4.jpg";
 import article1 from "../../assets/article1.jpg";
+import Marquee from './Marquee'
 
 const Hero = () => {
   return (
-    <section className="relative min-h-100vh lg:h-[100vh] overflow-hidden pt-20 bg-white overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-20">
+    <section className="relative min-h-[1,024px] overflow-hidden pt-20 bg-white overflow-hidden">
+      <div className="max-w-[1,440px] mx-auto px-6 lg:px-8 py-4">
         {/* Content and Images Container */}
-        <div className="relative">
+        <div className="relative ">
           {/* Center Content */}
-          <div className="text-center mb-8 relative z-10 max-w-4xl mx-auto">
-            <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-teal-900 leading-tight mb-4">
+          <div className="text-center   mb-8 relative z-10 flex flex-col items-center justify-center">
+            <h1 className="text-4xl  lg:text-[64px] xl:text-6xl font-bold text-teal-900 leading-tight mb-4 py-[16px] px-[8px]">
               Psychiatrist Online
             </h1>
-            <p className="text-xl lg:text-2xl text-gray-600 font-light italic leading-relaxed mb-6">
-              Get Professional Help From Our Psychiatrist <br /> and Psychologist Online
+            <p className="text-[32px] text-[#454545] font-serif font-bold italic italic mb-6 lg:w-[683px] lg:h-[87px] leading-[43.2px]">
+              Get Professional Help From Our Psychiatrist  and Psychologist Online
             </p>
-            
-            <p className="text-gray-600 leading-relaxed mb-8">
+            <p className="text-[#595959] text-[20px] leading-relaxed mb-8 lg:w-[639px] lg:h-[96px]">
               We perform clinical evaluations, diagnostic assessments, and offer treatment for a wide range of mental health and addiction conditions. You can access us online, by phone, or in person.
             </p>
 
@@ -38,12 +38,12 @@ const Hero = () => {
           </div>
 
           {/* Image Grid - Exact Layout with Overlapping Side Images */}
-          <div className="relative -mt-32 md:-mt-24 lg:-mt-56">
-            <div className="flex items-start justify-between gap-2 md:gap-4">
-              {/* Left Side - 2 images (starts overlapping content) */}
-              <div className="hidden md:block w-24 md:w-28 lg:w-40 flex-shrink-0 space-y-2 md:space-y-4">
+          <div className="relative -mt-8 md:-mt-24 lg:-mt-96 lg:h-[90vh] overflow-hidden">
+            <div className="flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4">
+              {/* Left Side - 2 images - hidden on small screens, visible on lg+ */}
+              <div className="hidden lg:block w-full md:w-auto flex md:flex-col gap-3 md:gap-4 justify-center md:justify-start">
                 {/* Top Left - Meditation woman (tall) */}
-                <div className="rounded-2xl overflow-hidden shadow-xl h-48 md:h-64 lg:h-96">
+                <div className="rounded-lg overflow-hidden shadow-xl w-[calc(50%-6px)] md:w-[140px] lg:w-[180px] xl:w-[220px] h-[180px] md:h-[200px] lg:h-[244px]">
                   <img
                     src={therapy3}
                     alt="Meditation"
@@ -53,7 +53,7 @@ const Hero = () => {
                   />
                 </div>
                 {/* Bottom Left - Work stress */}
-                <div className="rounded-2xl overflow-hidden shadow-xl h-32 md:h-44 lg:h-64">
+                <div className="rounded-lg overflow-hidden shadow-xl w-[calc(50%-6px)] md:w-[140px] lg:w-[180px] xl:w-[220px] h-[180px] md:h-[200px] lg:h-[244px]">
                   <img
                     src={therapy2}
                     alt="Work Stress"
@@ -64,21 +64,21 @@ const Hero = () => {
                 </div>
               </div>
 
-              {/* Center - 3 images in a row */}
-              <div className="flex-1 grid grid-cols-3 gap-2 md:gap-4 pt-24 md:pt-28">
-                {/* Depression */}
-                <div className="rounded-2xl overflow-hidden shadow-xl h-40 md:h-52 lg:h-80">
+              {/* Center - 2 images in a row (always visible) */}
+              <div className="w-full md:flex-1 grid grid-cols-2 gap-2 md:gap-3 lg:gap-4 pt-8 md:pt-28">
+                {/* First Center Image */}
+                <div className="rounded-lg mt-4 md:mt-8 lg:mt-40 overflow-hidden shadow-xl h-[140px] md:h-[180px] lg:h-[220px] xl:h-[244px]">
                   <img
                     src={therapy4}
-                    alt="Depression"
+                    alt="Therapy"
                     loading="lazy"
                     decoding="async"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 
-                {/* Anxiety */}
-                <div className="rounded-2xl mt-8 md:mt-12 overflow-hidden shadow-xl h-40 md:h-52 lg:h-80">
+                {/* Second Center Image */}
+                <div className="rounded-lg mt-4 md:mt-8 lg:mt-56 overflow-hidden shadow-xl h-[140px] md:h-[180px] lg:h-[220px] xl:h-[244px]">
                   <img
                     src={therapy1}
                     alt="Anxiety"
@@ -87,23 +87,12 @@ const Hero = () => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-
-                {/* Couple Therapy */}
-                <div className="rounded-2xl overflow-hidden shadow-xl h-40 md:h-52 lg:h-80">
-                  <img
-                    src={article1}
-                    alt="Couple Therapy"
-                    loading="lazy"
-                    decoding="async"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
               </div>
 
-              {/* Right Side - 2 images (starts overlapping content) */}
-              <div className="hidden md:block w-24 md:w-28 lg:w-40 flex-shrink-0 space-y-2 md:space-y-4">
+              {/* Right Side - 2 images - hidden on small screens, visible on lg+ */}
+              <div className="hidden lg:block w-full md:w-auto flex md:flex-col gap-3 md:gap-4 justify-center md:justify-end mt-3 md:mt-0">
                 {/* Top Right - Sleep issues (tall) */}
-                <div className="rounded-2xl overflow-hidden shadow-xl h-48 md:h-64 lg:h-96">
+                <div className="rounded-lg overflow-hidden shadow-xl w-[calc(50%-6px)] md:w-[140px] lg:w-[180px] xl:w-[220px] h-[180px] md:h-[200px] lg:h-[244px]">
                   <img
                     src={therapy2}
                     alt="Sleep Issues"
@@ -113,7 +102,7 @@ const Hero = () => {
                   />
                 </div>
                 {/* Bottom Right - Trauma */}
-                <div className="rounded-2xl overflow-hidden shadow-xl h-32 md:h-44 lg:h-64">
+                <div className="rounded-lg overflow-hidden shadow-xl w-[calc(50%-6px)] md:w-[140px] lg:w-[180px] xl:w-[220px] h-[180px] md:h-[200px] lg:h-[244px]">
                   <img
                     src={therapy4}
                     alt="Trauma"
@@ -128,8 +117,11 @@ const Hero = () => {
             {/* Bottom gradient fade effect */}
             <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white via-white/80 to-transparent pointer-events-none"></div>
           </div>
+          
         </div>
       </div>
+            <Marquee/>
+           
     </section>
   );
 };
@@ -137,3 +129,4 @@ const Hero = () => {
 
 
 export default Hero
+
