@@ -51,6 +51,15 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+#nprogress .bar {
+  background: #1D6361; /* ya brand color */
+  height: 3px;
+}
+
+#nprogress .peg {
+  box-shadow: 0 0 10px #246f6c, 0 0 5px #267d7b;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
