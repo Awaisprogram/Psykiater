@@ -55,12 +55,12 @@ const Footer = () => {
         </div>
 
         {/* Middle Section with Logo, Flags, Tagline and Newsletter */}
-        <div className="mb-2 border-t pt-8 ">
+        <div className="mb-2 border-t ">
           {/* Top row: Logo and Flags - responsive layout */}
-          <div className="lg:px-20 p-2 w-full flex  justify-between items-center flex-wrap mb-6 gap-4 lg:gap-0">
+          <div className="lg:px-20 w-full flex  justify-between items-center flex-wrap mb-6 gap-4 lg:gap-0">
             <span className="flex items-center space-x-2 sm:space-x-3 text-sm sm:text-base order-2 lg:order-1">
               <DenmarkFlag className="w-8 h-5 w-12 h-8 rounded-lg flex-shrink-0" />
-              <span className="hidden sm:inline text-black">Psykiatriker Sweden</span>
+              <span className="hidden lg:inline text-black">Psykiatriker Sweden</span>
               <span className="lg:hidden block text-black">Sweden</span>
             </span>
 
@@ -76,7 +76,7 @@ const Footer = () => {
             </Link>
             <span className="flex items-center space-x-2 sm:space-x-3 text-sm sm:text-base order-3">
               <SwedenFlag className="w-8 h-5 w-12 h-8 rounded-lg flex-shrink-0" />
-              <span className="hidden sm:inline text-black">DEN NORSKE LEGEFORENING</span>
+              <span className="hidden lg:inline text-black">DEN NORSKE LEGEFORENING</span>
               <span className="lg:hidden block text-black">Norwegian</span>
             </span>
           </div>

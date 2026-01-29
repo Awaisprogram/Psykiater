@@ -38,7 +38,7 @@ const BookAppointment = () => {
              
             <Button icon={<Video className="w-5 h-5" />} text={"Video Consultation"}/>
             
-          <button className="bg-white hover:bg-gray-50 text-teal-700 px-8 py-4 rounded-lg font-medium border-2 border-teal-700 transition-all duration-200 hover:shadow-lg transform hover:-translate-y-1 flex items-center gap-2">
+          <button className="bg-white hover:bg-gray-50 text-teal-700 px-6 py-3 rounded-lg font-medium border-2 border-teal-700 transition-all duration-200 hover:shadow-lg transform hover:-translate-y-1 flex items-center gap-2">
             <MapPin className="w-5 h-5" />
             Meeting in Oslo & Ski
           </button>
