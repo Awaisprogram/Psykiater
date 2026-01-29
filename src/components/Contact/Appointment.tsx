@@ -11,14 +11,11 @@ import Button from '../ui/Button';
 
 
 
-
-
-
 const BookAppointment = () => {
   const [isMuted, setIsMuted] = useState(false);
 
   return (
-    <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
+    <section className="py-20">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Header Section */}
         <div className="text-center mb-12">
@@ -37,11 +34,10 @@ const BookAppointment = () => {
 
         {/* CTA Buttons */}
         <div className="flex flex-wrap justify-center gap-4 mb-16">
-          <button className="bg-teal-700 hover:bg-teal-800 text-white px-8 py-4 rounded-lg font-medium transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1 flex items-center gap-2">
-             <Video className="w-5 h-5" />
-            <Button  text={"Video Consultation"}/>
+          
+             
+            <Button icon={<Video className="w-5 h-5" />} text={"Video Consultation"}/>
             
-          </button>
           <button className="bg-white hover:bg-gray-50 text-teal-700 px-8 py-4 rounded-lg font-medium border-2 border-teal-700 transition-all duration-200 hover:shadow-lg transform hover:-translate-y-1 flex items-center gap-2">
             <MapPin className="w-5 h-5" />
             Meeting in Oslo & Ski

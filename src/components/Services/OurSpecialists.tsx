@@ -58,12 +58,10 @@ const OurSpecialist = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
-              whileHover={{ y: -8 }}
             >
               {/* Doctor Image */}
               <motion.div 
                 className="aspect-[3/3] overflow-hidden max-w-lg mx-auto"
-                whileHover={{ scale: 1.02 }}
                 transition={{ duration: 0.3 }}
               >
                 <motion.img 

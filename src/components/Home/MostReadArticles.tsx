@@ -50,7 +50,7 @@ const MostReadArticles = () => {
           </div>
 
           <motion.button 
-            className="self-start md:self-auto px-5 py-2 rounded-md bg-emerald-700 text-white text-sm font-medium hover:bg-emerald-800 transition"
+            className="self-start md:self-auto px-5 py-2 rounded-md bg-[#1D6361] text-white text-sm font-medium hover:bg-emerald-800 transition"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
