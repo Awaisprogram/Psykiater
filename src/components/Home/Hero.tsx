@@ -13,13 +13,13 @@ const Hero = () => {
         <div className="relative ">
           {/* Center Content */}
           <div className="text-center   mb-8 relative z-10 flex flex-col items-center justify-center">
-            <h1 className="text-4xl lg:text-[64px] xl:text-6xl font-bold text-teal-900 leading-tight mb-4 py-[16px] px-[8px]">
+            <h1 className="text-5xl font-bold text-teal-900 leading-tight mb-4 px-[8px]">
               Psychiatrist Online
             </h1>
-            <p className="text-3xl lg:text-[32px] text-[#454545] font-serif font-bold italic italic mb-6 lg:w-[683px] lg:h-[87px] leading-[43.2px]">
+            <p className="text-4xl font-bold italic italic mb-6">
               Get Professional Help From Our Psychiatrist  and Psychologist Online
             </p>
-            <p className="text-2xl text-[#595959] lg:text-[20px] leading-relaxed mb-8 lg:w-[639px] lg:h-[96px]">
+            <p className="text-3xl leading-relaxed mb-8">
               We perform clinical evaluations, diagnostic assessments, and offer treatment for a wide range of mental health and addiction conditions. You can access us online, by phone, or in person.
             </p>
 
@@ -48,6 +48,7 @@ const Hero = () => {
                   loading="lazy"
                   decoding="async"
                   className="w-full h-full object-cover"
+                  style={{ willChange: 'transform' }} 
                 />
               </div>
               <div className="rounded-lg overflow-hidden shadow-xl w-[45%] max-w-[200px] h-[240px] md:h-[300px]">
@@ -57,6 +58,7 @@ const Hero = () => {
                   loading="lazy"
                   decoding="async"
                   className="w-full h-full object-cover"
+                  style={{ willChange: 'transform' }} 
                 />
               </div>
             </div>
@@ -73,6 +75,7 @@ const Hero = () => {
                     loading="lazy"
                     decoding="async"
                     className="w-full h-full object-cover"
+                    style={{ willChange: 'transform' }} 
                   />
                 </div>
                 {/* Bottom Left - Work stress */}
@@ -83,6 +86,7 @@ const Hero = () => {
                     loading="lazy"
                     decoding="async"
                     className="w-full h-full object-cover"
+                    style={{ willChange: 'transform' }} 
                   />
                 </div>
               </div>
@@ -98,6 +102,7 @@ const Hero = () => {
                       loading="lazy"
                       decoding="async"
                       className="w-full h-full object-cover"
+                      style={{ willChange: 'transform' }} 
                     />
                   </div>
                   <div className="rounded-lg overflow-hidden shadow-xl w-[180px] xl:w-[220px] h-[244px]">
@@ -107,6 +112,7 @@ const Hero = () => {
                       loading="lazy"
                       decoding="async"
                       className="w-full h-full object-cover"
+                      style={{ willChange: 'transform' }} 
                     />
                   </div>
                 </div>
@@ -120,6 +126,7 @@ const Hero = () => {
                       loading="lazy"
                       decoding="async"
                       className="w-full h-full object-cover"
+                      style={{ willChange: 'transform' }} 
                     />
                   </div>
                 </div>
@@ -133,6 +140,7 @@ const Hero = () => {
                       loading="lazy"
                       decoding="async"
                       className="w-full h-full object-cover"
+                      style={{ willChange: 'transform' }} 
                     />
                   </div>
                   <div className="rounded-lg overflow-hidden shadow-xl w-[180px] xl:w-[220px] h-[244px]">
@@ -142,6 +150,7 @@ const Hero = () => {
                       loading="lazy"
                       decoding="async"
                       className="w-full h-full object-cover"
+                      style={{ willChange: 'transform' }} 
                     />
                   </div>
                 </div>
@@ -157,6 +166,7 @@ const Hero = () => {
                     loading="lazy"
                     decoding="async"
                     className="w-full h-full object-cover"
+                    style={{ willChange: 'transform' }} 
                   />
                 </div>
                 {/* Bottom Right - Trauma */}
@@ -167,6 +177,7 @@ const Hero = () => {
                     loading="lazy"
                     decoding="async"
                     className="w-full h-full object-cover"
+                    style={{ willChange: 'transform' }} 
                   />
                 </div>
               </div>

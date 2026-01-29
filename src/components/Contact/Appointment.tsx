@@ -125,7 +125,7 @@ const BookAppointment = () => {
 
               {/* Corner expand button */}
               <span className="transition-colors opacity-0 group-hover:opacity-100 cursor-pointer">
-                <GoScreenFull size={10} className="bg-black/60 backdrop-blur-sm rounded-full p-4 text-white absolute top-4 right-4 w-14 h-14 flex items-center justify-center " />
+                <GoScreenFull size={10} className="bg-black/60 backdrop-blur-sm rounded-full p-2 text-white absolute top-4 right-4 w-10 h-10 flex items-center justify-center " />
                 </span>
             </div>
           </div>
@@ -169,7 +169,7 @@ const BookAppointment = () => {
 
                 <button className="flex flex-col items-center gap-0.5 hover:opacity-70 transition-opacity bg-white">
                   <Share2 className="w-4 h-4 text-teal-700" />
-                  <span className="text-[10px] text-gray-600 font-medium">Share Screen</span>
+                  <span className="text-[10px] text-teal-700 font-medium">Share Screen</span>
                 </button>
 
                 <button className="flex flex-col items-center gap-0.5 hover:opacity-70 transition-opacity bg-white">
@@ -194,8 +194,10 @@ const BookAppointment = () => {
               </div>
 
               {/* End Call Button */}
-              <button className="bg-teal-700 hover:bg-red-700 text-white px-4 py-2 rounded-lg font-medium transition-all duration-200 shadow-md hover:shadow-lg flex items-center gap-2">
-                <PhoneOff className="w-4 h-4" />
+              <button className="bg-teal-700 hover:bg-red-700 text-white px-8 py-4 lg:p-2 rounded-lg font-medium transition-all duration-200 shadow-md hover:shadow-lg flex items-center justify-center gap-2 w-full sm:w-auto">
+                <div className="flex items-center justify-center sm:justify-center">
+                  <PhoneOff className="w-4 h-4 sm:w-6 sm:h-6" />
+                </div>
                 <span className="hidden sm:inline text-xs">End Call</span>
               </button>
             </div>
