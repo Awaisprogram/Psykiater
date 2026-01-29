@@ -12,7 +12,7 @@ const Hero = () => {
         {/* Content and Images Container */}
         <div className="relative ">
           {/* Center Content */}
-          <div className="text-center   mb-8 relative z-10 flex flex-col items-center justify-center">
+          <div className="text-center pt-12   mb-8 relative z-10 flex flex-col items-center justify-center">
             <h1 className="text-4xl lg:text-[64px] xl:text-6xl font-bold text-teal-900 leading-tight mb-4 py-[16px] px-[8px]">
               Psychiatrist Online
             </h1>
@@ -38,9 +38,9 @@ const Hero = () => {
           </div>
 
           {/* Image Grid - Responsive Layout */}
-          <div className="relative -mt-8 md:-mt-24 lg:-mt-96 lg:h-[90vh] overflow-hidden">
+          <div className="relative -mt-8 md:-mt-24 lg:-mt-96  lg:h-[562px] overflow-hidden">
             {/* Mobile/Tablet View - Only 2 Images */}
-            <div className="flex lg:hidden justify-center gap-4 px-4 pt-8">
+            <div className="flex lg:hidden justify-center gap-4 px-4 md:pt-20">
               <div className="rounded-lg overflow-hidden shadow-xl w-[45%] max-w-[200px] h-[240px] md:h-[300px]">
                 <img
                   src={therapy3}
