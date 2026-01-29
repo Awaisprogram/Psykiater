@@ -3,6 +3,14 @@ import { Video, MapPin, Mic, MicOff, Video as VideoIcon, Users, Shield, MessageS
 import contact1Image from '../../assets/Contact1.jpg';
 import contact2Image from '../../assets/Contac2.jpg';
 import OurSpecialist1 from "../../assets/OurSpecialist1.png";
+import { SlOptionsVertical } from "react-icons/sl";
+import { RiVoiceprintFill } from "react-icons/ri";
+import { GoScreenFull } from "react-icons/go";
+import { IoLinkOutline } from "react-icons/io5";
+
+
+
+
 
 
 const BookAppointment = () => {
@@ -45,13 +53,13 @@ const BookAppointment = () => {
             <h3 className="text-lg font-bold text-gray-900">
               Psykiater's Video Consultation Session
             </h3>
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-12">
               <a 
                 href="#" 
-                className="text-teal-700 hover:text-teal-800 text-sm font-medium flex items-center gap-1"
+                className="text-teal-700 py-2 px-3 border-l-2 bg-[#D3E9FE] rounded-full hover:text-teal-800 text-sm font-medium flex items-center gap-3"
               >
-                <span className="w-2 h-2 bg-teal-700 rounded-full"></span>
-                app.100ms.live
+                <span className='border-r-teal-700'> <IoLinkOutline/></span>
+                sjm-jlmt-nsu
               </a>
               <div className="flex items-center gap-2">
                 <img 
@@ -61,17 +69,13 @@ const BookAppointment = () => {
                   style={{ willChange: 'transform' }} 
                 />
                 <span className="text-sm font-medium text-gray-700">Dr. Nelson</span>
-                <button className="text-gray-500 hover:text-gray-700">
-                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z" />
-                  </svg>
-                </button>
+                <SlOptionsVertical className="w-5 h-5 text-gray-700 cursor-pointer"/>
               </div>
             </div>
           </div>
 
           {/* Video Grid */}
-          <div className="grid md:grid-cols-2 gap-4 bg-gray-900 p-6 rounded-b-2xl">
+          <div className="grid md:grid-cols-2 gap-4  p-6 rounded-b-2xl">
             {/* Psychiatrist Video */}
             <div className="relative aspect-video bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl overflow-hidden group">
               {/* Psychiatrist Image */}
@@ -91,17 +95,10 @@ const BookAppointment = () => {
                 <div className="bg-black/60 backdrop-blur-sm px-3 py-2 rounded-lg">
                   <span className="text-white text-sm font-medium">Psychiatrist</span>
                 </div>
-                <button className="w-10 h-10 bg-white/20 hover:bg-white/30 backdrop-blur-sm rounded-full flex items-center justify-center transition-colors">
-                  <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15.536a5 5 0 001.414 1.06m2.828-9.9a9 9 0 012.121 2.121" />
-                  </svg>
-                </button>
+               <RiVoiceprintFill className="w-8 h-8 text-white cursor-pointer"/>
               </div>
 
-              {/* Corner expand button */}
-              <button className="absolute top-4 right-4 w-10 h-10 bg-black/40 hover:bg-black/60 backdrop-blur-sm rounded-lg flex items-center justify-center transition-colors opacity-0 group-hover:opacity-100">
-                <Grid className="w-5 h-5 text-white" />
-              </button>
+              
             </div>
 
             {/* Patient Video */}
@@ -123,28 +120,24 @@ const BookAppointment = () => {
                 <div className="bg-black/60 backdrop-blur-sm px-3 py-2 rounded-lg">
                   <span className="text-white text-sm font-medium">You</span>
                 </div>
-                <button className="w-10 h-10 bg-white/20 hover:bg-white/30 backdrop-blur-sm rounded-full flex items-center justify-center transition-colors">
-                  <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15.536a5 5 0 001.414 1.06m2.828-9.9a9 9 0 012.121 2.121" />
-                  </svg>
-                </button>
+                <RiVoiceprintFill className="w-8 h-8 text-white cursor-pointer"/>
               </div>
 
               {/* Corner expand button */}
-              <button className="absolute top-4 right-4 w-10 h-10 bg-black/40 hover:bg-black/60 backdrop-blur-sm rounded-lg flex items-center justify-center transition-colors opacity-0 group-hover:opacity-100">
-                <Grid className="w-5 h-5 text-white" />
-              </button>
+              <span className="transition-colors opacity-0 group-hover:opacity-100 cursor-pointer">
+                <GoScreenFull size={10} className="bg-black/60 backdrop-blur-sm rounded-full p-4 text-white absolute top-4 right-4 w-14 h-14 flex items-center justify-center " />
+                </span>
             </div>
           </div>
 
           {/* Control Bar */}
-          <div className="bg-white rounded-b-2xl p-4 shadow-lg -mt-2">
+          <div className="bg-white rounded-b-2xl p-4  -mt-2">
             <div className="flex flex-wrap items-center justify-between gap-3">
               {/* Left Controls */}
               <div className="flex justify-center items-center flex-wrap items-center gap-2 sm:gap-4 ">
                 <button 
                   onClick={() => setIsMuted(!isMuted)}
-                  className="flex flex-col items-center gap-0.5 hover:opacity-70 transition-opacity group"
+                  className="flex flex-col bg-white items-center gap-0.5 hover:opacity-70 transition-opacity group"
                 >
                   {isMuted ? (
                     <MicOff className="w-4 h-4 text-gray-600" />
@@ -154,54 +147,54 @@ const BookAppointment = () => {
                   <span className="text-[10px] text-gray-600 font-medium">Mute</span>
                 </button>
 
-                <button className="flex flex-col items-center gap-0.5 hover:opacity-70 transition-opacity">
+                <button className="flex flex-col items-center gap-0.5 hover:opacity-70 transition-opacity bg-white">
                   <VideoIcon className="w-4 h-4 text-gray-600" />
                   <span className="text-[10px] text-gray-600 font-medium">Start Video</span>
                 </button>
 
-                <button className="flex flex-col items-center gap-0.5 hover:opacity-70 transition-opacity">
+                <button className="flex flex-col items-center gap-0.5 hover:opacity-70 transition-opacity bg-white">
                   <Shield className="w-4 h-4 text-gray-600" />
                   <span className="text-[10px] text-gray-600 font-medium">Security</span>
                 </button>
 
-                <button className="flex flex-col items-center gap-0.5 hover:opacity-70 transition-opacity">
+                <button className="flex flex-col items-center gap-0.5 hover:opacity-70 transition-opacity bg-white">
                   <Users className="w-4 h-4 text-gray-600" />
                   <span className="text-[10px] text-gray-600 font-medium">Participants</span>
                 </button>
 
-                <button className="flex flex-col items-center gap-0.5 hover:opacity-70 transition-opacity">
+                <button className="flex flex-col items-center gap-0.5 hover:opacity-70 transition-opacity bg-white">
                   <MessageSquare className="w-4 h-4 text-gray-600" />
                   <span className="text-[10px] text-gray-600 font-medium">Chats</span>
                 </button>
 
-                <button className="flex flex-col items-center gap-0.5 hover:opacity-70 transition-opacity">
-                  <Share2 className="w-4 h-4 text-gray-600" />
+                <button className="flex flex-col items-center gap-0.5 hover:opacity-70 transition-opacity bg-white">
+                  <Share2 className="w-4 h-4 text-teal-700" />
                   <span className="text-[10px] text-gray-600 font-medium">Share Screen</span>
                 </button>
 
-                <button className="flex flex-col items-center gap-0.5 hover:opacity-70 transition-opacity">
+                <button className="flex flex-col items-center gap-0.5 hover:opacity-70 transition-opacity bg-white">
                   <Grid className="w-4 h-4 text-gray-600" />
                   <span className="text-[10px] text-gray-600 font-medium">Polling</span>
                 </button>
 
-                <button className="flex flex-col items-center gap-0.5 hover:opacity-70 transition-opacity">
+                <button className="flex flex-col items-center gap-0.5 hover:opacity-70 transition-opacity bg-white">
                   <VideoIcon className="w-4 h-4 text-gray-600" />
                   <span className="text-[10px] text-gray-600 font-medium">Record</span>
                 </button>
 
-                <button className="flex flex-col items-center gap-0.5 hover:opacity-70 transition-opacity">
+                <button className="flex flex-col items-center gap-0.5 hover:opacity-70 transition-opacity bg-white">
                   <Grid className="w-4 h-4 text-gray-600" />
                   <span className="text-[10px] text-gray-600 font-medium">Breakpoints</span>
                 </button>
 
-                <button className="flex flex-col items-center gap-0.5 hover:opacity-70 transition-opacity">
+                <button className="flex flex-col items-center gap-0.5 hover:opacity-70 transition-opacity bg-white">
                   <Smile className="w-4 h-4 text-gray-600" />
                   <span className="text-[10px] text-gray-600 font-medium">Reaction</span>
                 </button>
               </div>
 
               {/* End Call Button */}
-              <button className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg font-medium transition-all duration-200 shadow-md hover:shadow-lg flex items-center gap-2">
+              <button className="bg-teal-700 hover:bg-red-700 text-white px-4 py-2 rounded-lg font-medium transition-all duration-200 shadow-md hover:shadow-lg flex items-center gap-2">
                 <PhoneOff className="w-4 h-4" />
                 <span className="hidden sm:inline text-xs">End Call</span>
               </button>
