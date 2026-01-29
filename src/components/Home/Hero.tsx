@@ -6,8 +6,8 @@ import article1 from "../../assets/article1.jpg";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-100vh lg:h-[120vh] overflow-hidden pt-20 bg-white overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-12">
+    <section className="relative min-h-100vh lg:h-[100vh] overflow-hidden pt-20 bg-white overflow-hidden">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-20">
         {/* Content and Images Container */}
         <div className="relative">
           {/* Center Content */}
@@ -29,9 +29,9 @@ const Hero = () => {
                 <button className="bg-teal-700 hover:bg-teal-800 text-white px-8 py-3.5 rounded-lg font-medium transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
                   Video Consultation
                 </button>
-                <button className="bg-white hover:bg-gray-50 text-teal-700 px-8 py-3.5 rounded-lg font-medium border-2 border-teal-700 transition-all duration-200 hover:shadow-lg transform hover:-translate-y-1">
+                <p className="text-teal-700 px-8 py-3.5 font-medium border-b border-b-teal-700">
                   Meeting in Oslo & Ski
-                </button>
+                </p>
               </div>
              
             </div>
