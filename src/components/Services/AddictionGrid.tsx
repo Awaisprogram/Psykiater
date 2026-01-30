@@ -1,40 +1,46 @@
+import addiction1 from "../../assets/Addiction/addiction1.jpg"
+import addiction2 from "../../assets/Addiction/addiction2.jpg"
+import addiction3 from "../../assets/Addiction/addiction3.jpg"
+import addiction5 from "../../assets/Addiction/addiction5.jpg"
+import therapy1 from '../../assets/therapy1.jpg';
+
 
 const cards = [
   {
     category: "Addiction & Substance Abuse",
     title: "Drug Addiction and Substance Abuse",
     description: "A One Liner Description could come here.",
-    imageUrl: "https://images.unsplash.com/photo-1520242502100-3027b508f654?auto=format&fit=crop&q=80&w=300",
+    imageUrl: addiction1,
   },
   {
     category: "Addiction",
     title: "Addiction",
     description: "A One Liner Description could come here.",
-    imageUrl: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&q=80&w=300",
+    imageUrl: therapy1,
   },
   {
     category: "Addiction & Substance Abuse",
     title: "Drug Use and Addiction",
     description: "A One Liner Description could come here.",
-    imageUrl: "https://images.unsplash.com/photo-1628771065518-0d82f1938462?auto=format&fit=crop&q=80&w=300",
+    imageUrl: addiction2,
   },
   {
     category: "Addiction",
     title: "Alcohol Addiction",
     description: "A One Liner Description could come here.",
-    imageUrl: "https://images.unsplash.com/photo-1542125387-c71274d94f0a?auto=format&fit=crop&q=80&w=300",
+    imageUrl: addiction5,
   },
   {
     category: "Addiction",
     title: "Gambling Addiction",
     description: "A One Liner Description could come here.",
-    imageUrl: "https://images.unsplash.com/photo-1511193311914-0346f16efe90?auto=format&fit=crop&q=80&w=300",
+    imageUrl: addiction3,
   },
   {
     category: "Addiction & Substance Abuse",
     title: "Drug Card Cases and Follow-Ups",
     description: "A One Liner Description could come here.",
-    imageUrl: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&q=80&w=300",
+    imageUrl: addiction2,
   },
 ];
 
