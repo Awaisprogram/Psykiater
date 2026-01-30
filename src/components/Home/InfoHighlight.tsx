@@ -4,20 +4,20 @@ import { motion } from "motion/react";
 const InfoHighlight = () => {
   return (
     <section className="w-full bg-white py-14">
-      <div className="max-w-6xl mx-auto px-6">
+      <div className="max-w-7xl  mx-auto max-h-[329px] px-6">
         <motion.div
-          className="relative rounded-lg border border-sky-400 bg-sky-100 px-8 py-16 text-center cursor-default"
+          className="relative  rounded-lg border border-sky-400 bg-sky-100 px-8 py-16 text-center cursor-default"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          whileHover={{ scale: 1.01 }}
+         
         >
           {/* subtle pattern effect */}
           <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle,_#94a3b8_1px,_transparent_1px)] bg-[length:20px_20px] rounded-lg pointer-events-none" />
 
           <motion.p
-            className="relative z-10 font-semibold text-lg md:text-2xl text-gray-700 leading-relaxed font-serif max-w-4xl mx-auto"
+            className="relative z-10 font-semibold text-lg md:text-[32px] text-gray-700 leading-relaxed font-serif max-w-3xl mx-auto text-[32px] lg:leading-[48.6px]"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
