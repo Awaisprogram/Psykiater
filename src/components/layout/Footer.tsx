@@ -33,10 +33,17 @@ const SwedenFlag = ({ className }: { className?: string }) => (
 const Footer = () => {
   return (
     <footer className="bg-gradient-to-b from-gray-50 to-white pt-12 sm:pt-16 lg:pt-20 pb-8">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <div className="max-w-7xl mx-auto px-4 relative">
+        {/* Decorative Flower Backgrounds */}
+        <div className="absolute top-0 left-10 opacity-20 hidden lg:block">
+          <img src="/footer.svg" alt="" className="w-24 h-24 text-blue-200" />
+        </div>
+        <div className="absolute top-0 right-10 opacity-20 hidden lg:block">
+          <img src="/footer.svg" alt="" className="w-24 h-24 text-blue-200" />
+        </div>
         {/* Top Section with Info */}
         <div className="text-center mb-8">
-          <h2 className="text-xl sm:text-2xl lg:text-3xl font-light text-gray-900 mb-4">
+          <h2 className="text-xl sm:text-2xl lg:text-3xl font-sans leading-[37px] font-light text-[#1F1F1F] mb-4">
             Our Doctor and Specialist Are Member of Norwegian{" "}
             <br className="hidden sm:block" /> Medical Association
           </h2>
@@ -68,10 +75,11 @@ const Footer = () => {
               to="/"
               className="flex items-center space-x-3 group cursor-pointer order-1 lg:order-2"
             >
-              <img
-                src={logo}
-                alt="Logo"
-                className="w-72 h-72  object-contain transition-transform duration-300 group-hover:scale-105"
+              <img 
+                src={logo} 
+                alt="Logo" 
+                
+                className="w-[187px] h-72 object-cover transition-transform duration-300 group-hover:scale-105"
               />
             </Link>
             <span className="flex items-center space-x-2 sm:space-x-3 text-sm sm:text-base order-3">
@@ -84,7 +92,7 @@ const Footer = () => {
           {/* Bottom row: Tagline and Newsletter */}
           <div className="text-center">
             <p
-              className="text-gray-700 text-lg sm:text-2xl lg:text-3xl font-Inria-Serif mb-4 sm:mb-6"
+              className="text-gray-700 text-lg sm:text-2xl lg:text-[40px] lg:leading-[54px] font-serif font-bold mb-4 sm:mb-6"
             >
               Psykiater.no, doctor and specialist{" "}
               <br className="hidden lg:block" />
@@ -98,7 +106,7 @@ const Footer = () => {
                 placeholder="Enter Your Email"
                 className="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-700 focus:border-transparent text-sm bg-white"
               />
-              <button className="px-6 py-3 bg-teal-700 hover:bg-teal-800 text-white rounded-lg font-medium transition-colors whitespace-nowrap text-sm">
+              <button className="px-6 py-3 bg-[#1D6361] hover:bg-teal-800 text-white rounded-lg font-medium transition-colors whitespace-nowrap text-sm">
                 Subscribe
               </button>
             </div>

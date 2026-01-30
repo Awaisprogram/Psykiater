@@ -24,7 +24,7 @@ const articles = [
 const MostReadArticles = () => {
   return (
     <motion.section
-      className="bg-white py-20 content-visibility-auto"
+      className="bg-white py-20 "
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}

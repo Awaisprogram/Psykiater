@@ -44,12 +44,12 @@ const Navbar = () => {
         <div className="max-w-7xl mx-auto  lg:px-2">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
-            <Link to="/" className="flex items-center space-x-3 group cursor-pointer w-[187px]">
+            <Link to="/" className="flex items-center space-x-3 group cursor-pointer  w-[187px]">
               <img 
                 src={logo} 
                 alt="Logo" 
                 
-                className="w-[187px] h-[74px] object-cover transition-transform duration-300 group-hover:scale-105"
+                className="w-[187px] h-72 object-cover transition-transform duration-300 group-hover:scale-105"
               />
             </Link>
 
