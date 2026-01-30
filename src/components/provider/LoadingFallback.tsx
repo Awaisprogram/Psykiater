@@ -7,11 +7,11 @@ function LoadingFallback() {
       <motion.div
         className="absolute top-1/4 left-1/4 w-64 h-64 bg-teal-100/30 rounded-full blur-3xl"
         animate={{
-          scale: [1, 1.2, 1],
+          scale: [1, 1.1, 1],
           opacity: [0.3, 0.5, 0.3],
         }}
         transition={{
-          duration: 4,
+          duration: 3,
           repeat: Infinity,
           ease: "easeInOut",
         }}
@@ -19,14 +19,14 @@ function LoadingFallback() {
       <motion.div
         className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-50/30 rounded-full blur-3xl"
         animate={{
-          scale: [1.2, 1, 1.2],
+          scale: [1.1, 1, 1.1],
           opacity: [0.3, 0.5, 0.3],
         }}
         transition={{
-          duration: 4,
+          duration: 3,
           repeat: Infinity,
           ease: "easeInOut",
-          delay: 1,
+          delay: 0.5,
         }}
       />
 
@@ -35,11 +35,11 @@ function LoadingFallback() {
         {/* Logo with breathing animation */}
         <motion.div
           animate={{
-            scale: [1, 1.05, 1],
+            scale: [1, 1.03, 1],
             opacity: [0.9, 1, 0.9],
           }}
           transition={{
-            duration: 2,
+            duration: 1.5,
             repeat: Infinity,
             ease: "easeInOut",
           }}
@@ -59,7 +59,7 @@ function LoadingFallback() {
           <motion.span
             animate={{ opacity: [0, 1, 0] }}
             transition={{
-              duration: 1.5,
+              duration: 0.8,
               repeat: Infinity,
               ease: "easeInOut",
             }}
@@ -70,10 +70,10 @@ function LoadingFallback() {
           <motion.span
             animate={{ opacity: [0, 1, 0] }}
             transition={{
-              duration: 1.5,
+              duration: 0.8,
               repeat: Infinity,
               ease: "easeInOut",
-              delay: 0.3,
+              delay: 0.2,
             }}
             className="text-teal-600 text-xl font-bold"
           >
@@ -82,10 +82,10 @@ function LoadingFallback() {
           <motion.span
             animate={{ opacity: [0, 1, 0] }}
             transition={{
-              duration: 1.5,
+              duration: 0.8,
               repeat: Infinity,
               ease: "easeInOut",
-              delay: 0.6,
+              delay: 0.4,
             }}
             className="text-teal-600 text-xl font-bold"
           >
@@ -101,7 +101,7 @@ function LoadingFallback() {
               x: ["-100%", "100%"],
             }}
             transition={{
-              duration: 1.5,
+              duration: 0.8,
               repeat: Infinity,
               ease: "easeInOut",
             }}
@@ -114,3 +114,4 @@ function LoadingFallback() {
 }
 
 export default LoadingFallback;
+

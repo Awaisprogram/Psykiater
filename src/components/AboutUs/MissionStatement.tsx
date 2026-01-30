@@ -6,10 +6,10 @@ const MissionStatement = () => {
       {/* Floating Labels */}
       <motion.div 
         className="absolute top-8 left-12 lg:left-24"
-        initial={{ opacity: 0, x: -50, rotate: -12 }}
+        initial={{ opacity: 0, x: -20, rotate: -12 }}
         whileInView={{ opacity: 1, x: 0, rotate: -12 }}
-        viewport={{ once: true, margin: "-100px" }}
-        transition={{ duration: 0.5, delay: 0.1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.3, delay: 0.05 }}
       >
         <div className="bg-teal-700 text-white px-6 py-2.5 rounded-full text-sm font-medium shadow-lg">
           Accessibility
@@ -18,10 +18,10 @@ const MissionStatement = () => {
 
       <motion.div 
         className="absolute top-16 right-12 lg:right-24"
-        initial={{ opacity: 0, x: 50, rotate: 12 }}
+        initial={{ opacity: 0, x: 20, rotate: 12 }}
         whileInView={{ opacity: 1, x: 0, rotate: 12 }}
-        viewport={{ once: true, margin: "-100px" }}
-        transition={{ duration: 0.5, delay: 0.2 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.3, delay: 0.1 }}
       >
         <div className="bg-lime-300 text-gray-800 px-6 py-2.5 rounded-full text-sm font-medium shadow-lg">
           Care
@@ -30,10 +30,10 @@ const MissionStatement = () => {
 
       <motion.div 
         className="absolute bottom-8 left-12 lg:left-32"
-        initial={{ opacity: 0, x: -50, rotate: -12 }}
+        initial={{ opacity: 0, x: -20, rotate: -12 }}
         whileInView={{ opacity: 1, x: 0, rotate: -12 }}
-        viewport={{ once: true, margin: "-100px" }}
-        transition={{ duration: 0.5, delay: 0.3 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.3, delay: 0.15 }}
       >
         <div className="bg-blue-300 text-gray-800 px-6 py-2.5 rounded-full text-sm font-medium shadow-lg">
           Trust
@@ -42,10 +42,10 @@ const MissionStatement = () => {
 
       <motion.div 
         className="absolute bottom-16 right-12 lg:right-32"
-        initial={{ opacity: 0, x: 50, rotate: 12 }}
+        initial={{ opacity: 0, x: 20, rotate: 12 }}
         whileInView={{ opacity: 1, x: 0, rotate: 12 }}
-        viewport={{ once: true, margin: "-100px" }}
-        transition={{ duration: 0.5, delay: 0.4 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.3, delay: 0.2 }}
       >
         <div className="bg-blue-200 text-gray-800 px-6 py-2.5 rounded-full text-sm font-medium shadow-lg">
           Simplicity
@@ -57,10 +57,10 @@ const MissionStatement = () => {
         {/* Title */}
         <motion.h2 
           className="text-4xl lg:text-5xl font-bold text-teal-900 mb-12 tracking-wide uppercase"
-          initial={{ opacity: 0, y: -30 }}
+          initial={{ opacity: 0, y: -15 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.6, delay: 0.2 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.3, delay: 0.15 }}
         >
           Mission Statement
         </motion.h2>
@@ -69,20 +69,20 @@ const MissionStatement = () => {
         <div className="space-y-6 text-gray-700 leading-relaxed">
           <motion.p 
             className="text-base lg:text-lg"
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.5, delay: 0.3 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.25, delay: 0.2 }}
           >
             Founded on the principle that mental health care should be as accessible as any other medical service. Psykiater.no was created to bridge the gap between those seeking help and the specialists who can provide it.
           </motion.p>
           
           <motion.p 
             className="text-base lg:text-lg"
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.5, delay: 0.4 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.25, delay: 0.25 }}
           >
             The traditional mental health services often involve long waiting times, complex referral processes, and limited options. Our mission is simple: provide fast access to board-certified psychiatrists and addiction specialists through flexible, modern service delivery
           </motion.p>
@@ -93,3 +93,4 @@ const MissionStatement = () => {
 };
 
 export default MissionStatement;
+
