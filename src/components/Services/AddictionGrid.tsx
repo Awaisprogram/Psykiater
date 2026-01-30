@@ -52,17 +52,17 @@ const AddictionGrid = () => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
-      transition={{ duration: 0.5 }}
+      transition={{ duration: 0.3 }}
     >
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-8 lg:gap-x-12 gap-y-8 lg:gap-y-10">
         {cards.map((card, index) => (
           <motion.div
             key={index}
             className="flex flex-col sm:flex-row justify-between items-start group cursor-pointer"
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: index * 0.1 }}
+            transition={{ duration: 0.25, delay: index * 0.05 }}
           >
             <div className="flex-1 pr-0 sm:pr-4 mb-4 sm:mb-0">
               <span className="text-[#A2C02B] text-base sm:text-[18px] font-semibold mb-2 block">
@@ -77,8 +77,8 @@ const AddictionGrid = () => {
             </div>
             <motion.div
               className="w-full sm:w-28 lg:w-32 h-48 sm:h-28 lg:h-32 flex-shrink-0 overflow-hidden rounded-lg shadow-sm"
-              whileHover={{ scale: 1.02 }}
-              transition={{ duration: 0.3 }}
+              whileHover={{ scale: 1.01 }}
+              transition={{ duration: 0.15 }}
             >
               <img
                 src={card.imageUrl}
@@ -94,3 +94,4 @@ const AddictionGrid = () => {
 };
 
 export default AddictionGrid;
+
