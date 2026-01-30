@@ -23,21 +23,21 @@ const articles = [
 
 const MostReadArticles = () => {
   return (
-    <motion.section 
-      className="bg-white py-20"
+    <motion.section
+      className="bg-white py-20 content-visibility-auto"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
-      transition={{ duration: 0.8 }}
+      transition={{ duration: 0.5 }}
     >
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
-        <motion.div 
+        <motion.div
           className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-10"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.2 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
         >
           <div>
             <h2 className="text-3xl font-serif text-gray-800">
@@ -49,28 +49,26 @@ const MostReadArticles = () => {
             </p>
           </div>
 
-          <motion.button 
-            className="self-start md:self-auto px-5 py-2 rounded-md bg-[#1D6361] text-white text-sm font-medium hover:bg-emerald-800 transition"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
+          <button
+            className="self-start md:self-auto px-5 py-2 rounded-md bg-[#1D6361] text-white text-sm font-medium hover:bg-emerald-800 transition hero-image-hover"
           >
             View All
-          </motion.button>
+          </button>
         </motion.div>
 
         {/* Articles Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {articles.map((article, index) => (
-            <motion.div 
-              key={article.id} 
+            <motion.div
+              key={article.id}
               className="group"
-              initial={{ opacity: 0, y: 50 }}
+              initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.3 + (index * 0.15) }}
+              transition={{ duration: 0.5, delay: 0.2 + (index * 0.1) }}
             >
-            {/* Image */}
-              <div className="overflow-hidden rounded-xl">
+              {/* Image */}
+              <div className="overflow-hidden rounded-xl hero-image-wrapper">
                 <motion.img
                   src={article.image}
                   alt={article.title}
@@ -78,12 +76,8 @@ const MostReadArticles = () => {
                   decoding="async"
                   width="400"
                   height="224"
-                  className="h-56 w-full object-cover"
-                  whileHover={{ scale: 1.1 }}
-                  transition={{ duration: 0.4 }}
+                  className="h-56 w-full object-cover hero-image-hover"
                 />
-                {/* Low Quality Placeholder */}
-                <div className="absolute inset-0 bg-gradient-to-br from-gray-100 to-gray-200 -z-10" />
               </div>
 
               {/* Content */}
@@ -91,7 +85,6 @@ const MostReadArticles = () => {
                 <h3 className="text-lg font-serif text-gray-800 leading-snug">
                   {article.title}
                 </h3>
-
                 <motion.a
                   href="#"
                   className="inline-flex items-center gap-2 text-sm font-medium text-emerald-700 hover:text-emerald-800 transition"
