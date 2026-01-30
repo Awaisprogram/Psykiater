@@ -1,3 +1,4 @@
+import { motion } from "motion/react";
 import addiction1 from "../../assets/Addiction/addiction1.jpg"
 import addiction2 from "../../assets/Addiction/addiction2.jpg"
 import addiction3 from "../../assets/Addiction/addiction3.jpg"
@@ -46,10 +47,23 @@ const cards = [
 
 const AddictionGrid = () => {
   return (
-    <div className="p-4 sm:p-6">
+    <motion.div
+      className="p-4 sm:p-6"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5 }}
+    >
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-8 lg:gap-x-12 gap-y-8 lg:gap-y-10">
         {cards.map((card, index) => (
-          <div key={index} className="flex flex-col sm:flex-row justify-between items-start group cursor-pointer">
+          <motion.div
+            key={index}
+            className="flex flex-col sm:flex-row justify-between items-start group cursor-pointer"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
+          >
             <div className="flex-1 pr-0 sm:pr-4 mb-4 sm:mb-0">
               <span className="text-[#A2C02B] text-base sm:text-[18px] font-semibold mb-2 block">
                 {card.category}
@@ -61,17 +75,21 @@ const AddictionGrid = () => {
                 {card.description}
               </p>
             </div>
-            <div className="w-full sm:w-28 lg:w-32 h-48 sm:h-28 lg:h-32 flex-shrink-0 overflow-hidden rounded-lg shadow-sm">
+            <motion.div
+              className="w-full sm:w-28 lg:w-32 h-48 sm:h-28 lg:h-32 flex-shrink-0 overflow-hidden rounded-lg shadow-sm"
+              whileHover={{ scale: 1.02 }}
+              transition={{ duration: 0.3 }}
+            >
               <img
                 src={card.imageUrl}
                 alt={card.title}
                 className="w-full h-full object-cover grayscale-[20%] group-hover:scale-105 transition-transform duration-300"
               />
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 };
 
