@@ -221,7 +221,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="sm:hidden text-center mt-3 text-xs sm:text-sm text-gray-600">
-            <span>Designed & Developed By Systim</span>
+            <span>Designed & Developed By Sysinn</span>
           </div>
         </div>
       </div>
