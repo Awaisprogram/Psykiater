@@ -40,22 +40,22 @@ const cards = [
 
 const AddictionGrid = () => {
   return (
-    <div className="p-6 ">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10">
+    <div className="p-4 sm:p-6">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-8 lg:gap-x-12 gap-y-8 lg:gap-y-10">
         {cards.map((card, index) => (
-          <div key={index} className="flex justify-between items-start group cursor-pointer">
-            <div className="flex-1 pr-4">
-              <span className="text-[#A2C02B] text-[18px] font-semibold mb-2 block">
+          <div key={index} className="flex flex-col sm:flex-row justify-between items-start group cursor-pointer">
+            <div className="flex-1 pr-0 sm:pr-4 mb-4 sm:mb-0">
+              <span className="text-[#A2C02B] text-base sm:text-[18px] font-semibold mb-2 block">
                 {card.category}
               </span>
-              <h3 className="text-[20px] font-bold text-gray-800 mb-2 leading-[27px]">
+              <h3 className="text-lg sm:text-[20px] font-bold text-gray-800 mb-2 leading-tight sm:leading-[27px]">
                 {card.title}
               </h3>
-              <p className="text-[#595959] text-[18px] italic">
+              <p className="text-[#595959] text-base sm:text-[18px] italic">
                 {card.description}
               </p>
             </div>
-            <div className="w-32 h-32 flex-shrink-0 overflow-hidden rounded-lg shadow-sm">
+            <div className="w-full sm:w-28 lg:w-32 h-48 sm:h-28 lg:h-32 flex-shrink-0 overflow-hidden rounded-lg shadow-sm">
               <img
                 src={card.imageUrl}
                 alt={card.title}
