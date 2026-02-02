@@ -1,11 +1,14 @@
 import { motion } from "motion/react";
-import therapy1 from "../../assets/therapy1.jpg";
-import therapy2 from "../../assets/therapy2.jpg";
-import therapy3 from "../../assets/therapy3.jpg";
-import therapy4 from "../../assets/therapy4.jpg";
 import article1 from "../../assets/article1.jpg";
 import Marquee from "./Marquee";
 import Button from "../ui/Button";
+import LazyImage from "../ui/LazyImage";
+
+// Static imports for image paths (these don't create separate chunks)
+import therapy1Img from "../../assets/therapy1.jpg";
+import therapy2Img from "../../assets/therapy2.jpg";
+import therapy3Img from "../../assets/therapy3.jpg";
+import therapy4Img from "../../assets/therapy4.jpg";
 
 const Hero = () => {
   return (
@@ -29,7 +32,7 @@ const Hero = () => {
               Psychiatrist Online
             </motion.h1>
             <motion.p
-              className="text-xl lg:text-[32px] text-[#454545] font-serif font-semibold italic mb-6 lg:w-[683px] lg:leading-[43.2px]"
+              className="text-lg lg:text-[32px] text-[#454545] font-serif font-semibold italic mb-6 lg:w-[683px] lg:leading-[43.2px]"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
@@ -84,10 +87,10 @@ const Hero = () => {
                 className="rounded-lg overflow-hidden shadow-xl w-[45%] max-w-[200px] h-[240px] md:h-[300px]"
                 whileHover={{ scale: 1.05 }}
               >
-                <img
-                  src={therapy3}
+                <LazyImage
+                  src={therapy3Img}
                   alt="Meditation"
-                  fetchPriority="high"
+                  priority={true}
                   className="w-full h-full object-cover"
                 />
               </motion.div>
@@ -95,10 +98,10 @@ const Hero = () => {
                 className="rounded-lg overflow-hidden shadow-xl w-[45%] max-w-[200px] h-[240px] md:h-[300px]"
                 whileHover={{ scale: 1.05 }}
               >
-                <img
-                  src={therapy1}
+                <LazyImage
+                  src={therapy1Img}
                   alt="Therapy Session"
-                  fetchPriority="high"
+                  priority={true}
                   className="w-full h-full object-cover"
                 />
               </motion.div>
@@ -131,10 +134,9 @@ const Hero = () => {
                   transition={{ duration: 0.6, delay: 1.3 }}
                   whileHover={{ scale: 1.05 }}
                 >
-                  <img
-                    src={therapy2}
+                  <LazyImage
+                    src={therapy2Img}
                     alt="Work Stress"
-                    loading="lazy"
                     className="w-full h-full object-cover"
                   />
                 </motion.div>
@@ -151,10 +153,9 @@ const Hero = () => {
                     transition={{ duration: 0.6, delay: 1.4 }}
                     whileHover={{ scale: 1.05 }}
                   >
-                    <img
-                      src={therapy4}
+                    <LazyImage
+                      src={therapy4Img}
                       alt="Depression Support"
-                      loading="lazy"
                       className="w-full h-full object-cover"
                     />
                   </motion.div>
@@ -165,10 +166,9 @@ const Hero = () => {
                     transition={{ duration: 0.6, delay: 1.5 }}
                     whileHover={{ scale: 1.05 }}
                   >
-                    <img
-                      src={therapy1}
+                    <LazyImage
+                      src={therapy1Img}
                       alt="Mental Health"
-                      loading="lazy"
                       className="w-full h-full object-cover"
                     />
                   </motion.div>
@@ -185,10 +185,10 @@ const Hero = () => {
                     className="rounded-lg overflow-hidden shadow-xl w-[220px] xl:w-[244px] h-[244px]"
                     whileHover={{ scale: 1.05 }}
                   >
-                    <img
-                      src={therapy1}
+                    <LazyImage
+                      src={therapy1Img}
                       alt="Anxiety Treatment"
-                      fetchPriority="high"
+                      priority={true}
                       className="w-full h-full object-cover"
                     />
                   </motion.div>
@@ -203,10 +203,9 @@ const Hero = () => {
                     transition={{ duration: 0.6, delay: 1.7 }}
                     whileHover={{ scale: 1.05 }}
                   >
-                    <img
-                      src={therapy3}
+                    <LazyImage
+                      src={therapy3Img}
                       alt="Couple Therapy"
-                      loading="lazy"
                       className="w-full h-full object-cover"
                     />
                   </motion.div>
@@ -217,10 +216,9 @@ const Hero = () => {
                     transition={{ duration: 0.6, delay: 1.8 }}
                     whileHover={{ scale: 1.05 }}
                   >
-                    <img
-                      src={therapy2}
+                    <LazyImage
+                      src={therapy2Img}
                       alt="Family Support"
-                      loading="lazy"
                       className="w-full h-full object-cover"
                     />
                   </motion.div>
@@ -237,10 +235,9 @@ const Hero = () => {
                   transition={{ duration: 0.6, delay: 1.9 }}
                   whileHover={{ scale: 1.05 }}
                 >
-                  <img
-                    src={therapy2}
+                  <LazyImage
+                    src={therapy2Img}
                     alt="Sleep Issues"
-                    loading="lazy"
                     className="w-full h-full object-cover"
                   />
                 </motion.div>
@@ -252,10 +249,9 @@ const Hero = () => {
                   transition={{ duration: 0.6, delay: 2.0 }}
                   whileHover={{ scale: 1.05 }}
                 >
-                  <img
-                    src={therapy4}
+                  <LazyImage
+                    src={therapy4Img}
                     alt="Trauma Support"
-                    loading="lazy"
                     className="w-full h-full object-cover"
                   />
                 </motion.div>

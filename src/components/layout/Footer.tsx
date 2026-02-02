@@ -170,25 +170,25 @@ const Footer = () => {
         {/* Social Media Icons */}
         <div className="flex justify-center gap-3 sm:gap-4 mb-10 sm:mb-12">
           <a
-            href="#"
+            href="https://www.facebook.com/sysinnllc"
             className="w-10 h-10 sm:w-12 sm:h-12 rounded-full border-2 border-gray-300 flex items-center justify-center hover:border-teal-700 hover:bg-teal-50 transition-all group"
           >
             <Facebook className="w-4 h-4 sm:w-5 sm:h-5 text-gray-600 group-hover:text-teal-700" />
           </a>
           <a
-            href="#"
+            href="https://www.linkedin.com/company/sysinn/"
             className="w-10 h-10 sm:w-12 sm:h-12 rounded-full border-2 border-gray-300 flex items-center justify-center hover:border-teal-700 hover:bg-teal-50 transition-all group"
           >
             <Linkedin className="w-4 h-4 sm:w-5 sm:h-5 text-gray-600 group-hover:text-teal-700" />
           </a>
           <a
-            href="#"
+            href="https://www.instagram.com/sysinnllc/"
             className="w-10 h-10 sm:w-12 sm:h-12 rounded-full border-2 border-gray-300 flex items-center justify-center hover:border-teal-700 hover:bg-teal-50 transition-all group"
           >
             <Instagram className="w-4 h-4 sm:w-5 sm:h-5 text-gray-600 group-hover:text-teal-700" />
           </a>
           <a
-            href="#"
+            href="https://x.com/sysinnllc"
             className="w-10 h-10 sm:w-12 sm:h-12 rounded-full border-2 border-gray-300 flex items-center justify-center hover:border-teal-700 hover:bg-teal-50 transition-all group"
           >
             <X className="w-4 h-4 sm:w-5 sm:h-5 text-gray-600 group-hover:text-teal-700" />

@@ -3,11 +3,35 @@
   <head>
     <meta charset="UTF-8" />
 
-    <link rel="preload" href="/fonts/inria-sans/InriaSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="/fonts/inria-serif/InriaSerif-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <!-- Preload fonts used by LCP text -->
+    <link
+      rel="preload"
+      href="/fonts/inria-sans/InriaSans-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/inria-serif/InriaSerif-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
 
-  <!-- Preload LCP hero image -->
-  <link rel="preload" as="image" href="/assets/hero-1200x600.webp">
+    <!-- Preload LCP hero image -->
+    <link rel="preload" as="image" href="/assets/hero-1200x600.webp" />
+
+    <!-- Load full Tailwind CSS asynchronously -->
+    <link
+      rel="stylesheet"
+      href="/assets/index-73e75c05.css"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript>
+      <link rel="stylesheet" href="/assets/index-73e75c05.css" />
+    </noscript>
 
     <!-- SEO Meta Description -->
     <meta
@@ -21,7 +45,14 @@
     <title>PSYKIATER.NO | Online Psychiatrist & Psychologist</title>
   </head>
   <body>
-    <div id="root"></div>
+    <!-- Root container -->
+    <div id="root">
+      <main>
+        <!-- React will render your page content here -->
+      </main>
+    </div>
+
+    <!-- Main JS entry -->
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
