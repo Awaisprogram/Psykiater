@@ -10,40 +10,26 @@ const Hero = () => {
       <div className="max-w-[1,440px] mx-auto px-6 lg:px-8 py-4">
         {/* Content and Images Container */}
         <div className="relative ">
-          {/* Center Content */}
-          <motion.div
-            className="text-center pt-12 mb-8 relative z-10 flex flex-col items-center justify-center"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.8 }}
-          >
-            <motion.h1
+          {/* Center Content - LCP critical, render immediately */}
+          <div className="text-center pt-12 mb-8 relative z-10 flex flex-col items-center justify-center">
+            <h1
               className="text-4xl lg:text-[64px] xl:text-6xl font-medium text-[#1D6361] leading-tight mb-4 py-[16px] px-[8px]"
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, ease: "easeOut" }}
             >
               Psychiatrist Online
-            </motion.h1>
-            <motion.p
+            </h1>
+            <p
               className="text-xl lg:text-[32px] text-[#454545] font-serif font-semibold italic mb-6 lg:w-[683px] lg:leading-[43.2px]"
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
             >
               Get Professional Help From Our Psychiatrist and Psychologist
               Online
-            </motion.p>
-            <motion.p
+            </p>
+            <p
               className="text-ld text-[#595959] lg:text-[20px] leading-relaxed mb-8 lg:w-[639px] lg:h-[96px]"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
             >
               We perform clinical evaluations, diagnostic assessments, and offer
               treatment for a wide range of mental health and addiction
               conditions. You can access us online, by phone, or in person.
-            </motion.p>
+            </p>
 
             {/* CTA Buttons with decorative line */}
             <div className="relative inline-block">
@@ -64,7 +50,7 @@ const Hero = () => {
                 </motion.p>
               </motion.div>
             </div>
-          </motion.div>
+          </div>
 
           {/* Image Grid - Responsive Layout */}
           <Banner/>
