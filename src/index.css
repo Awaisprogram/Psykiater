@@ -8,15 +8,23 @@
   src: url("/fonts/inria-sans/InriaSans-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
-  font-display: optional;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inria Sans";
+  src: url("/fonts/inria-sans/InriaSans-Regular.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Inria Sans";
   src: url("/fonts/inria-sans/InriaSans-Bold.woff2") format("woff2");
-  font-weight: 700;
+  font-weight: 600;
   font-style: normal;
-  font-display: optional;
+  font-display: swap;
 }
 
 /* Inria Serif */
@@ -25,24 +33,24 @@
   src: url("/fonts/inria-serif/InriaSerif-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
-  font-display: optional;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Inria Serif";
-  src: url("/fonts/inria-serif/InriaSerif-Bold.woff2") format("woff2");
+  src: url("/fonts/inria-serif/inria-serif-700.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
-  font-display: optional;
+  font-display: swap;
 }
 
 /* Inter (buttons only) */
 @font-face {
   font-family: "Inter";
-  src: url("/fonts/inter/Inter_18pt-Medium.woff2") format("woff2");
+  src: url("/fonts/inter/inter-500.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
-  font-display: optional;
+  font-display: swap;
 }
 
 

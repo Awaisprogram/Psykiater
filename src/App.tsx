@@ -2,8 +2,8 @@ import { Routes, Route } from "react-router-dom";
 import { Suspense, lazy } from "react";
 import LoadingFallback from "./components/provider/LoadingFallback";
 import RouteProgress from "./components/provider/RouteProgress";
-import HomePage from "./pages/HomePage";
 
+const HomePage = lazy(() => import("./pages/HomePage"));
 const ServicesPage = lazy(() => import("./pages/ServicesPage"));
 const TherapyPage = lazy(() => import("./pages/TherapyPage"));
 const AboutPage = lazy(() => import("./pages/AboutPage"));
