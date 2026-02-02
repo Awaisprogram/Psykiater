@@ -37,16 +37,13 @@ const Hero = () => {
               Get Professional Help From Our Psychiatrist and Psychologist
               Online
             </motion.p>
-            <motion.p
+            <p
               className="text-ld text-[#595959] lg:text-[20px] leading-relaxed mb-8 lg:w-[639px] lg:h-[96px]"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
             >
               We perform clinical evaluations, diagnostic assessments, and offer
               treatment for a wide range of mental health and addiction
               conditions. You can access us online, by phone, or in person.
-            </motion.p>
+            </p>
 
             {/* CTA Buttons with decorative line */}
             <div className="relative inline-block">
@@ -90,8 +87,7 @@ const Hero = () => {
                 <img
                   src={therapy3}
                   alt="Meditation"
-                  loading="lazy"
-                  decoding="async"
+                  fetchPriority="high"
                   className="w-full h-full object-cover"
                 />
               </motion.div>
@@ -102,8 +98,7 @@ const Hero = () => {
                 <img
                   src={therapy1}
                   alt="Therapy Session"
-                  loading="lazy"
-                  decoding="async"
+                  fetchPriority="high"
                   className="w-full h-full object-cover"
                 />
               </motion.div>
@@ -125,7 +120,6 @@ const Hero = () => {
                     src={article1}
                     alt="Meditation"
                     loading="lazy"
-                    decoding="async"
                     className="w-full h-full object-cover"
                   />
                 </motion.div>
@@ -141,7 +135,6 @@ const Hero = () => {
                     src={therapy2}
                     alt="Work Stress"
                     loading="lazy"
-                    decoding="async"
                     className="w-full h-full object-cover"
                   />
                 </motion.div>
@@ -162,7 +155,6 @@ const Hero = () => {
                       src={therapy4}
                       alt="Depression Support"
                       loading="lazy"
-                      decoding="async"
                       className="w-full h-full object-cover"
                     />
                   </motion.div>
@@ -177,13 +169,12 @@ const Hero = () => {
                       src={therapy1}
                       alt="Mental Health"
                       loading="lazy"
-                      decoding="async"
                       className="w-full h-full object-cover"
                     />
                   </motion.div>
                 </div>
 
-                {/* Column 2 - Anxiety (single centered image) */}
+                {/* Column 2 - Anxiety (single centered image) - PRIMARY LCP IMAGE */}
                 <motion.div
                   className="flex justify-center mt-56"
                   initial={{ opacity: 0, y: 50 }}
@@ -197,8 +188,7 @@ const Hero = () => {
                     <img
                       src={therapy1}
                       alt="Anxiety Treatment"
-                      loading="lazy"
-                      decoding="async"
+                      fetchPriority="high"
                       className="w-full h-full object-cover"
                     />
                   </motion.div>
@@ -217,7 +207,6 @@ const Hero = () => {
                       src={therapy3}
                       alt="Couple Therapy"
                       loading="lazy"
-                      decoding="async"
                       className="w-full h-full object-cover"
                     />
                   </motion.div>
@@ -232,7 +221,6 @@ const Hero = () => {
                       src={therapy2}
                       alt="Family Support"
                       loading="lazy"
-                      decoding="async"
                       className="w-full h-full object-cover"
                     />
                   </motion.div>
@@ -253,7 +241,6 @@ const Hero = () => {
                     src={therapy2}
                     alt="Sleep Issues"
                     loading="lazy"
-                    decoding="async"
                     className="w-full h-full object-cover"
                   />
                 </motion.div>
@@ -269,7 +256,6 @@ const Hero = () => {
                     src={therapy4}
                     alt="Trauma Support"
                     loading="lazy"
-                    decoding="async"
                     className="w-full h-full object-cover"
                   />
                 </motion.div>

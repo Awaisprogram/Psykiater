@@ -3,6 +3,9 @@ import react from '@vitejs/plugin-react';
 import { imageToWebpPlugin } from 'vite-plugin-image-to-webp';
 
 export default defineConfig({
+  build: {
+    cssCodeSplit: true
+  },
   plugins: [
     react(),
     imageToWebpPlugin({
