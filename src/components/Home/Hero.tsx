@@ -21,7 +21,7 @@ const Hero = () => {
             transition={{ duration: 0.8 }}
           >
             <motion.h1
-              className="text-4xl lg:text-[64px] xl:text-6xl font-bold text-[#1D6361] leading-tight mb-4 py-[16px] px-[8px]"
+              className="text-4xl lg:text-[64px] xl:text-6xl font-medium text-[#1D6361] leading-tight mb-4 py-[16px] px-[8px]"
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
@@ -29,7 +29,7 @@ const Hero = () => {
               Psychiatrist Online
             </motion.h1>
             <motion.p
-              className="text-xl lg:text-[32px] text-[#454545] font-serif font-bold italic mb-6 lg:w-[683px] lg:leading-[43.2px]"
+              className="text-xl lg:text-[32px] text-[#454545] font-serif font-semibold italic mb-6 lg:w-[683px] lg:leading-[43.2px]"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}

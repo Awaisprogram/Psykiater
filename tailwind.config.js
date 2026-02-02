@@ -10,9 +10,15 @@ export default {
         brand: '#1D6361',
       },
       fontFamily: {
+        sans: ['"Inria Sans"', 'system-ui', 'sans-serif'],
         serif: ['"Inria Serif"', 'serif'],
-        sans: ['"Inria Sans"', 'sans-serif'],
-        inter: ['"Inter"', 'sans-serif'],
+        inter: ['Inter', 'sans-serif'],
+      },
+      fontWeight: {
+        regular: 400,
+        medium: 500,
+        semibold: 600,
+        bold: 700,
       },
       keyframes: {
         marquee: {
