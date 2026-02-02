@@ -13,7 +13,9 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     <BrowserRouter>
       <Navbar/>
       <ScrollToTop>
-      <App />
+      <main role="main">
+        <App />
+      </main>
 
       <Footer/>
       </ScrollToTop>

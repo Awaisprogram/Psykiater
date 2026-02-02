@@ -1,11 +1,8 @@
 import { ArrowRight } from 'lucide-react';
-import LazyImage from '../ui/LazyImage';
-
-// Static imports for image paths (these don't create separate chunks)
-import therapy1Img from '../../assets/therapy1.jpg';
-import therapy2Img from '../../assets/therapy2.jpg';
-import therapy3Img from '../../assets/therapy3.jpg';
-import therapy4Img from '../../assets/therapy4.jpg';
+import therapy1 from '../../assets/therapy1.jpg';
+import therapy2 from '../../assets/therapy2.jpg';
+import therapy3 from '../../assets/therapy3.jpg';
+import therapy4 from '../../assets/therapy4.jpg';
 
 const AllTherapies = () => {
   const therapies = [
@@ -13,25 +10,25 @@ const AllTherapies = () => {
       id: 1,
       title: 'Individual Therapy',
       description: 'One-on-one sessions tailored to your personal needs',
-      imageSrc: therapy1Img,
+      imageUrl: therapy1,
     },
     {
       id: 2,
       title: 'Cognitive Therapy',
       description: 'Evidence-based approach for mental wellness',
-      imageSrc: therapy2Img,
+      imageUrl: therapy2,
     },
     {
       id: 3,
       title: 'Couple Therapy',
       description: 'Strengthen your relationship with professional guidance',
-      imageSrc: therapy3Img,
+      imageUrl: therapy3,
     },
     {
       id: 4,
       title: 'Family Therapy',
       description: 'Build healthier family dynamics together',
-      imageSrc: therapy4Img,
+      imageUrl: therapy4,
     },
   ];
 
@@ -55,11 +52,12 @@ const AllTherapies = () => {
           >
             {/* Image Container */}
             <div className="aspect-[4/3] overflow-hidden relative">
-              <LazyImage 
-                src={therapy.imageSrc} 
+              <img 
+                src={therapy.imageUrl} 
                 alt={therapy.title}
+                loading="lazy"
                 className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-                style={{ willChange: 'transform' }}
+                style={{ willChange: 'transform' }} 
               />
             </div>
 

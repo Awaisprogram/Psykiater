@@ -1,14 +1,11 @@
 import { motion } from "motion/react";
+import therapy1 from "../../assets/therapy1.jpg";
+import therapy2 from "../../assets/therapy2.jpg";
+import therapy3 from "../../assets/therapy3.jpg";
+import therapy4 from "../../assets/therapy4.jpg";
 import article1 from "../../assets/article1.jpg";
 import Marquee from "./Marquee";
 import Button from "../ui/Button";
-import LazyImage from "../ui/LazyImage";
-
-// Static imports for image paths (these don't create separate chunks)
-import therapy1Img from "../../assets/therapy1.jpg";
-import therapy2Img from "../../assets/therapy2.jpg";
-import therapy3Img from "../../assets/therapy3.jpg";
-import therapy4Img from "../../assets/therapy4.jpg";
 
 const Hero = () => {
   return (
@@ -32,7 +29,7 @@ const Hero = () => {
               Psychiatrist Online
             </motion.h1>
             <motion.p
-              className="text-lg lg:text-[32px] text-[#454545] font-serif font-semibold italic mb-6 lg:w-[683px] lg:leading-[43.2px]"
+              className="text-xl lg:text-[32px] text-[#454545] font-serif font-semibold italic mb-6 lg:w-[683px] lg:leading-[43.2px]"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
@@ -40,13 +37,16 @@ const Hero = () => {
               Get Professional Help From Our Psychiatrist and Psychologist
               Online
             </motion.p>
-            <p
+            <motion.p
               className="text-ld text-[#595959] lg:text-[20px] leading-relaxed mb-8 lg:w-[639px] lg:h-[96px]"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
             >
               We perform clinical evaluations, diagnostic assessments, and offer
               treatment for a wide range of mental health and addiction
               conditions. You can access us online, by phone, or in person.
-            </p>
+            </motion.p>
 
             {/* CTA Buttons with decorative line */}
             <div className="relative inline-block">
@@ -87,10 +87,11 @@ const Hero = () => {
                 className="rounded-lg overflow-hidden shadow-xl w-[45%] max-w-[200px] h-[240px] md:h-[300px]"
                 whileHover={{ scale: 1.05 }}
               >
-                <LazyImage
-                  src={therapy3Img}
+                <img
+                  src={therapy3}
                   alt="Meditation"
-                  priority={true}
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover"
                 />
               </motion.div>
@@ -98,10 +99,11 @@ const Hero = () => {
                 className="rounded-lg overflow-hidden shadow-xl w-[45%] max-w-[200px] h-[240px] md:h-[300px]"
                 whileHover={{ scale: 1.05 }}
               >
-                <LazyImage
-                  src={therapy1Img}
+                <img
+                  src={therapy1}
                   alt="Therapy Session"
-                  priority={true}
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover"
                 />
               </motion.div>
@@ -123,6 +125,7 @@ const Hero = () => {
                     src={article1}
                     alt="Meditation"
                     loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover"
                   />
                 </motion.div>
@@ -134,9 +137,11 @@ const Hero = () => {
                   transition={{ duration: 0.6, delay: 1.3 }}
                   whileHover={{ scale: 1.05 }}
                 >
-                  <LazyImage
-                    src={therapy2Img}
+                  <img
+                    src={therapy2}
                     alt="Work Stress"
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover"
                   />
                 </motion.div>
@@ -153,9 +158,11 @@ const Hero = () => {
                     transition={{ duration: 0.6, delay: 1.4 }}
                     whileHover={{ scale: 1.05 }}
                   >
-                    <LazyImage
-                      src={therapy4Img}
+                    <img
+                      src={therapy4}
                       alt="Depression Support"
+                      loading="lazy"
+                      decoding="async"
                       className="w-full h-full object-cover"
                     />
                   </motion.div>
@@ -166,15 +173,17 @@ const Hero = () => {
                     transition={{ duration: 0.6, delay: 1.5 }}
                     whileHover={{ scale: 1.05 }}
                   >
-                    <LazyImage
-                      src={therapy1Img}
+                    <img
+                      src={therapy1}
                       alt="Mental Health"
+                      loading="lazy"
+                      decoding="async"
                       className="w-full h-full object-cover"
                     />
                   </motion.div>
                 </div>
 
-                {/* Column 2 - Anxiety (single centered image) - PRIMARY LCP IMAGE */}
+                {/* Column 2 - Anxiety (single centered image) */}
                 <motion.div
                   className="flex justify-center mt-56"
                   initial={{ opacity: 0, y: 50 }}
@@ -185,10 +194,11 @@ const Hero = () => {
                     className="rounded-lg overflow-hidden shadow-xl w-[220px] xl:w-[244px] h-[244px]"
                     whileHover={{ scale: 1.05 }}
                   >
-                    <LazyImage
-                      src={therapy1Img}
+                    <img
+                      src={therapy1}
                       alt="Anxiety Treatment"
-                      priority={true}
+                      loading="lazy"
+                      decoding="async"
                       className="w-full h-full object-cover"
                     />
                   </motion.div>
@@ -203,9 +213,11 @@ const Hero = () => {
                     transition={{ duration: 0.6, delay: 1.7 }}
                     whileHover={{ scale: 1.05 }}
                   >
-                    <LazyImage
-                      src={therapy3Img}
+                    <img
+                      src={therapy3}
                       alt="Couple Therapy"
+                      loading="lazy"
+                      decoding="async"
                       className="w-full h-full object-cover"
                     />
                   </motion.div>
@@ -216,9 +228,11 @@ const Hero = () => {
                     transition={{ duration: 0.6, delay: 1.8 }}
                     whileHover={{ scale: 1.05 }}
                   >
-                    <LazyImage
-                      src={therapy2Img}
+                    <img
+                      src={therapy2}
                       alt="Family Support"
+                      loading="lazy"
+                      decoding="async"
                       className="w-full h-full object-cover"
                     />
                   </motion.div>
@@ -235,9 +249,11 @@ const Hero = () => {
                   transition={{ duration: 0.6, delay: 1.9 }}
                   whileHover={{ scale: 1.05 }}
                 >
-                  <LazyImage
-                    src={therapy2Img}
+                  <img
+                    src={therapy2}
                     alt="Sleep Issues"
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover"
                   />
                 </motion.div>
@@ -249,9 +265,11 @@ const Hero = () => {
                   transition={{ duration: 0.6, delay: 2.0 }}
                   whileHover={{ scale: 1.05 }}
                 >
-                  <LazyImage
-                    src={therapy4Img}
+                  <img
+                    src={therapy4}
                     alt="Trauma Support"
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover"
                   />
                 </motion.div>
