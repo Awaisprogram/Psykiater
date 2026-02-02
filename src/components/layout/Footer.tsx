@@ -52,11 +52,15 @@ const Footer = () => {
               <div className="w-8 h-8 sm:w-10 sm:h-10 bg-teal-700 rounded-full flex items-center justify-center flex-shrink-0">
                 <Check className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
               </div>
-              <span className="font-medium text-sm sm:text-base">DEN NORSKE LEGEFORENING</span>
+              <span className="font-medium text-sm sm:text-base">
+                DEN NORSKE LEGEFORENING
+              </span>
             </div>
             <div className="flex items-center gap-2 text-gray-700">
               <Phone className="w-4 h-4 sm:w-5 sm:h-5 text-teal-700 flex-shrink-0" />
-              <span className="font-medium text-sm sm:text-base">Org No: 912 875 083</span>
+              <span className="font-medium text-sm sm:text-base">
+                Org No: 912 875 083
+              </span>
             </div>
           </div>
         </div>
@@ -67,7 +71,9 @@ const Footer = () => {
           <div className="lg:px-20 w-full flex  justify-between items-center flex-wrap mb-6 gap-4 lg:gap-0">
             <span className="flex items-center space-x-2 sm:space-x-3 text-sm sm:text-base order-2 lg:order-1">
               <DenmarkFlag className="w-8 h-5 w-12 h-8 rounded-lg flex-shrink-0" />
-              <span className="hidden lg:inline text-black">Psykiatriker Sweden</span>
+              <span className="hidden lg:inline text-black">
+                Psykiatriker Sweden
+              </span>
               <span className="lg:hidden block text-black">Sweden</span>
             </span>
 
@@ -75,25 +81,24 @@ const Footer = () => {
               to="/"
               className="flex items-center space-x-3 group cursor-pointer order-1 lg:order-2"
             >
-              <img 
-                src={logo} 
-                alt="Logo" 
-                
+              <img
+                src={logo}
+                alt="Logo"
                 className="w-[187px] h-72 object-cover transition-transform duration-300 group-hover:scale-105"
               />
             </Link>
             <span className="flex items-center space-x-2 sm:space-x-3 text-sm sm:text-base order-3">
               <SwedenFlag className="w-8 h-5 w-12 h-8 rounded-lg flex-shrink-0" />
-              <span className="hidden lg:inline text-black">DEN NORSKE LEGEFORENING</span>
+              <span className="hidden lg:inline text-black">
+                DEN NORSKE LEGEFORENING
+              </span>
               <span className="lg:hidden block text-black">Norwegian</span>
             </span>
           </div>
 
           {/* Bottom row: Tagline and Newsletter */}
           <div className="text-center">
-            <p
-              className="text-gray-700 text-lg sm:text-2xl lg:text-[40px] lg:leading-[54px] font-serif font-bold mb-4 sm:mb-6"
-            >
+            <p className="text-gray-700 text-lg sm:text-2xl lg:text-[40px] lg:leading-[54px] font-serif font-bold mb-4 sm:mb-6">
               Psykiater.no, doctor and specialist{" "}
               <br className="hidden lg:block" />
               in addiction medicine.
@@ -172,24 +177,31 @@ const Footer = () => {
           <a
             href="https://www.facebook.com/sysinnllc"
             className="w-10 h-10 sm:w-12 sm:h-12 rounded-full border-2 border-gray-300 flex items-center justify-center hover:border-teal-700 hover:bg-teal-50 transition-all group"
+            aria-label="Facebook"
           >
             <Facebook className="w-4 h-4 sm:w-5 sm:h-5 text-gray-600 group-hover:text-teal-700" />
           </a>
+
           <a
             href="https://www.linkedin.com/company/sysinn/"
             className="w-10 h-10 sm:w-12 sm:h-12 rounded-full border-2 border-gray-300 flex items-center justify-center hover:border-teal-700 hover:bg-teal-50 transition-all group"
+            aria-label="LinkedIn"
           >
             <Linkedin className="w-4 h-4 sm:w-5 sm:h-5 text-gray-600 group-hover:text-teal-700" />
           </a>
+
           <a
             href="https://www.instagram.com/sysinnllc/"
             className="w-10 h-10 sm:w-12 sm:h-12 rounded-full border-2 border-gray-300 flex items-center justify-center hover:border-teal-700 hover:bg-teal-50 transition-all group"
+            aria-label="Instagram"
           >
             <Instagram className="w-4 h-4 sm:w-5 sm:h-5 text-gray-600 group-hover:text-teal-700" />
           </a>
+
           <a
             href="https://x.com/sysinnllc"
             className="w-10 h-10 sm:w-12 sm:h-12 rounded-full border-2 border-gray-300 flex items-center justify-center hover:border-teal-700 hover:bg-teal-50 transition-all group"
+            aria-label="X (formerly Twitter)"
           >
             <X className="w-4 h-4 sm:w-5 sm:h-5 text-gray-600 group-hover:text-teal-700" />
           </a>
